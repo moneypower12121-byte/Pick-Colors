@@ -1,0 +1,141 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { motion } from 'motion/react';
+import { SlidersHorizontal, Maximize2 } from 'lucide-react';
+import ColorSwatchPro from '../components/ColorSwatchPro';
+
+export default function Picker() {
+  const [hue, setHue] = useState(200);
+  const [saturation, setSaturation] = useState(80);
+  const [lightness, setLightness] = useState(50);
+
+  const currentHex = hslToHex(hue, saturation, lightness);
+  const currentRgb = hslToRgbString(hue, saturation, lightness);
+  const currentHsl = `${hue}°, ${saturation}%, ${lightness}%`;
+
+  return (
+    <div className="min-h-screen pt-32 pb-20 px-6">
+      <main className="max-w-7xl mx-auto">
+        <div className="mb-12">
+          <h1 className="text-headline mb-4">The Light Table</h1>
+          <p className="text-body max-w-2xl">
+            Precision color selection with real-time conversion and extraction.
+          </p>
+          <div className="mt-4"><Link to="/blog/color-picker-converter" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary-container transition-colors">Read the guide →</Link></div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          {/* Controls - The Light Table Interface */}
+          <div className="lg:col-span-7 bg-surface-highest rounded-[2rem] p-8 border border-white/5 relative overflow-hidden">
+            <div className="absolute inset-0 mesh-gradient-bg opacity-20 mix-blend-overlay pointer-events-none"></div>
+            
+            <div className="relative z-10">
+              <div className="flex items-center gap-3 mb-8">
+                <SlidersHorizontal className="w-5 h-5 text-primary" />
+                <h2 className="text-xl font-medium">Precision Controls</h2>
+              </div>
+
+              <div className="space-y-8">
+                {/* Hue Slider */}
+                <div>
+                  <div className="flex justify-between items-center mb-4">
+                    <label className="text-label-sm">Hue</label>
+                    <span className="font-mono text-sm text-text-secondary">{hue}°</span>
+                  </div>
+                  <input 
+                    type="range" 
+                    min="0" max="360" 
+                    value={hue} 
+                    onChange={(e) => setHue(Number(e.target.value))}
+                    className="w-full h-3 rounded-full appearance-none cursor-pointer"
+                    style={{
+                      background: 'linear-gradient(to right, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%)'
+                    }}
+                  />
+                </div>
+
+                {/* Saturation Slider */}
+                <div>
+                  <div className="flex justify-between items-center mb-4">
+                    <label className="text-label-sm">Saturation</label>
+                    <span className="font-mono text-sm text-text-secondary">{saturation}%</span>
+                  </div>
+                  <input 
+                    type="range" 
+                    min="0" max="100" 
+                    value={saturation} 
+                    onChange={(e) => setSaturation(Number(e.target.value))}
+                    className="w-full h-3 rounded-full appearance-none cursor-pointer"
+                    style={{
+                      background: `linear-gradient(to right, hsl(${hue}, 0%, ${lightness}%), hsl(${hue}, 100%, ${lightness}%))`
+                    }}
+                  />
+                </div>
+
+                {/* Lightness Slider */}
+                <div>
+                  <div className="flex justify-between items-center mb-4">
+                    <label className="text-label-sm">Lightness</label>
+                    <span className="font-mono text-sm text-text-secondary">{lightness}%</span>
+                  </div>
+                  <input 
+                    type="range" 
+                    min="0" max="100" 
+                    value={lightness} 
+                    onChange={(e) => setLightness(Number(e.target.value))}
+                    className="w-full h-3 rounded-full appearance-none cursor-pointer"
+                    style={{
+                      background: `linear-gradient(to right, hsl(${hue}, ${saturation}%, 0%), hsl(${hue}, ${saturation}%, 50%), hsl(${hue}, ${saturation}%, 100%))`
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Preview & Swatch */}
+          <div className="lg:col-span-5 flex flex-col gap-6">
+            <div 
+              className="flex-1 rounded-[2rem] border border-white/10 relative overflow-hidden min-h-[200px]"
+              style={{ backgroundColor: currentHex }}
+            >
+              <button className="absolute top-4 right-4 p-2 bg-black/20 hover:bg-black/40 backdrop-blur-md rounded-full text-white transition-colors">
+                <Maximize2 className="w-5 h-5" />
+              </button>
+            </div>
+            
+            <ColorSwatchPro 
+              hex={currentHex}
+              name="Selected Color"
+              rgb={currentRgb}
+              hsl={currentHsl}
+            />
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+}
+
+// Helper functions
+function hslToHex(h: number, s: number, l: number) {
+  l /= 100;
+  const a = s * Math.min(l, 1 - l) / 100;
+  const f = (n: number) => {
+    const k = (n + h / 30) % 12;
+    const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
+    return Math.round(255 * color).toString(16).padStart(2, '0');
+  };
+  return `#${f(0)}${f(8)}${f(4)}`.toUpperCase();
+}
+
+function hslToRgbString(h: number, s: number, l: number) {
+  l /= 100;
+  const a = s * Math.min(l, 1 - l) / 100;
+  const f = (n: number) => {
+    const k = (n + h / 30) % 12;
+    const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
+    return Math.round(255 * color);
+  };
+  return `${f(0)}, ${f(8)}, ${f(4)}`;
+}
