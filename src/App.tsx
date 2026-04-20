@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import BackgroundAnimation from './components/BackgroundAnimation';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Picker from './pages/Picker';
 import Palette from './pages/Palette';
@@ -37,6 +38,7 @@ export default function App() {
   return (
     <>
       <BackgroundAnimation />
+      <ScrollToTop />
       <div className="min-h-screen text-on-surface selection:bg-primary/30 selection:text-white flex flex-col relative z-0">
         <Navbar />
         <div className="flex-1">
