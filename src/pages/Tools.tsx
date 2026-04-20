@@ -161,7 +161,7 @@ export default function Tools() {
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
         title="16 Free Professional Color Tools" 
-        description="The complete suite for color manipulation, analysis, and extraction. Contrast checkers, gradient generators, format converters and more."
+        description="Explore 16 free professional color tools — color picker, palette generator, contrast checker, gradient maker, vision simulator & more. Built for designers & developers."
         canonicalUrl="https://pickcolors.xyz/tools"
       />
       <main className="max-w-7xl mx-auto">

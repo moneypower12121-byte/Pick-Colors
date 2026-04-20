@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
-Disallow: /dashboard
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
 
 Sitemap: https://pickcolors.xyz/sitemap.xml

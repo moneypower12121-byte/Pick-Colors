@@ -46,8 +46,8 @@ export default function Home() {
     <div className="min-h-screen bg-surface text-on-surface font-body selection:bg-primary/30 overflow-x-hidden">
       <main>
         <SEO 
-          title="Free Online Color Picker & Palette Generator | PickColors" 
-          description="Advanced online color picker and palette generator for professionals. Pick HEX, RGB, and HSL colors with optical precision. Perfect for modern web design and branding."
+          title="Free Color Picker & Palette Tools — PickColors" 
+          description="Pick, convert & generate colors in seconds. 16 free tools for designers & developers — HEX, RGB, HSL, CMYK palettes & more. No sign-up needed."
           canonicalUrl="https://pickcolors.xyz/"
         />
         {/* New Animated Hero Section */}
@@ -127,7 +127,7 @@ export default function Home() {
                 Click anywhere to remix
               </div>
               <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-tight text-white text-glow transition-transform duration-500 hover:scale-[1.02]">
-                Free Color Picker & <br/><span className="text-transparent bg-clip-text bg-gradient-to-br from-primary via-primary-container to-secondary">Palette Generator</span>
+                Free Online Color Tools for Designers & Developers
               </h1>
               <p className="text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed font-light">
                 Generate atmospheric palettes with optical precision using the world's most advanced digital prism.

@@ -21,13 +21,13 @@ export default function Picker() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Online Color Picker & HEX/RGB/HSL Converter | PickColors" 
-        description="Professional online color picker tool. Select colors visually and convert instantly between HEX, RGB, and HSL formats for web design and development."
+        title="Free Online Color Picker — HEX, RGB & HSL | PickColors" 
+        description="Free online color picker with real-time HEX, RGB & HSL conversion. Pick any color visually, extract from images, and copy code instantly. No install needed."
         canonicalUrl="https://pickcolors.xyz/picker"
       />
       <main className="max-w-7xl mx-auto">
         <div className="mb-12">
-          <h1 className="text-headline mb-4">Color Picker & HEX/RGB Converter</h1>
+          <h1 className="text-headline mb-4 font-black">Free Online Color Picker & HEX RGB HSL Converter</h1>
           <p className="text-body max-w-2xl">
             Precision color selection with real-time conversion and extraction.
           </p>
