@@ -69,7 +69,7 @@ console.log(`Prerendering ${uniqueRoutes.length} routes...`);
     }
 
     const html = template
-      .replace('<meta name="app-head" content="app-head" />', appHead)
+      .replace('<title>PickColors - The Digital Prism</title>', appHead.trim())
       .replace('<!--app-html-->', appHtml);
 
     const filePath = url === '/' ? 'index.html' : `${url.replace(/^\//, '')}/index.html`;
