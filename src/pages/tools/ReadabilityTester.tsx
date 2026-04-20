@@ -31,9 +31,30 @@ export default function ReadabilityTester() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Text Readability Tester" 
-        description="Preview text readability across different sizes and background colors."
-        canonicalUrl="https://pickcolors.xyz/tools/ReadabilityTester"
+        title="Text Readability Tester — Font & Background Colors | PickColors"
+        description="Preview text readability across different font sizes and background colors. Ensure your design meets accessibility standards for all users."
+        canonicalUrl="https://pickcolors.xyz/tools/readability-tester"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Text Readability Tester",
+          "url": "https://pickcolors.xyz/tools/readability-tester",
+          "description": "Preview text readability across different font sizes and background colors. Ensure your design meets accessibility standards for all users.",
+          "applicationCategory": "DesignApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          },
+          "featureList": "Live preview, Font size testing, Background color testing, Readability scoring"
+        }}
       />
       <main className="max-w-5xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
@@ -41,7 +62,9 @@ export default function ReadabilityTester() {
         </Link>
         
         <div className="mb-12">
-          <h1 className="text-headline mb-4">Readability Tester</h1>
+          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
+            Text Readability Tester
+          </h1>
           <p className="text-body max-w-2xl">
             Preview text readability across different sizes and backgrounds.
           </p>

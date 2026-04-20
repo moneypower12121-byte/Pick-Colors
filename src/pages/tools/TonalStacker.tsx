@@ -42,9 +42,30 @@ export default function TonalStacker() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Tonal Stacker - Shade and Tint Generator" 
-        description="Generate perfect shades and tints automatically based on a single base color."
-        canonicalUrl="https://pickcolors.xyz/tools/TonalStacker"
+        title="Tints & Shades Generator — Color Scale Builder | PickColors"
+        description="Generate perfect tints and shades from any base color automatically. Create complete color scales for design systems and UI components."
+        canonicalUrl="https://pickcolors.xyz/tools/tonal-stacker"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Tints and Shades Generator",
+          "url": "https://pickcolors.xyz/tools/tonal-stacker",
+          "description": "Generate perfect tints and shades from any base color automatically. Create complete color scales for design systems and UI components.",
+          "applicationCategory": "DesignApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          },
+          "featureList": "Automatic tint generation, Shade scales, Design system ready, HEX export"
+        }}
       />
       <main className="max-w-5xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
@@ -52,7 +73,9 @@ export default function TonalStacker() {
         </Link>
         
         <div className="mb-12">
-          <h1 className="text-headline mb-4">Tonal Stacker</h1>
+          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
+            Tints & Shades Generator — Color Scale Builder
+          </h1>
           <p className="text-body max-w-2xl">
             Generate perfect shades and tints automatically based on a single base color. Ideal for creating design system tokens.
           </p>

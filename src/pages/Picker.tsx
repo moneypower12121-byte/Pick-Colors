@@ -21,15 +21,38 @@ export default function Picker() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Free Online Color Picker — HEX, RGB & HSL | PickColors" 
-        description="Free online color picker with real-time HEX, RGB & HSL conversion. Pick any color visually, extract from images, and copy code instantly. No install needed."
+        title="Free Online Color Picker — HEX, RGB, HSL | PickColors"
+        description="Free online color picker with real-time HEX, RGB & HSL conversion. Pick any color visually, extract from images, and copy code instantly."
         canonicalUrl="https://pickcolors.xyz/picker"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Free Online Color Picker",
+          "url": "https://pickcolors.xyz/picker",
+          "description": "Free online color picker with real-time HEX, RGB & HSL conversion. Pick any color visually, extract from images, and copy code instantly.",
+          "applicationCategory": "DesignApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          },
+          "featureList": "Real-time HEX conversion, RGB and HSL output, Visual color spectrum, Eyedropper tool"
+        }}
       />
       <main className="max-w-7xl mx-auto">
         <div className="mb-12">
-          <h1 className="text-headline mb-4 font-black">Free Online Color Picker & HEX RGB HSL Converter</h1>
-          <p className="text-body max-w-2xl">
-            Precision color selection with real-time conversion and extraction.
+          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
+            Free Online Color Picker & HEX RGB HSL Converter
+          </h1>
+          <p className="text-text-secondary text-lg max-w-2xl">
+            The Light Table — Professional color selection and precise format conversion for designers and developers.
           </p>
           <div className="mt-4"><Link to="/blog/color-picker-converter" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary-container transition-colors">Read the guide →</Link></div>
         </div>
@@ -124,6 +147,23 @@ export default function Picker() {
         </div>
       </main>
       <ToolGuide {...guideData} />
+      <section className="max-w-7xl mx-auto px-6 py-20 border-t border-white/5">
+        <h2 className="text-2xl font-bold mb-8">Related Design Tools</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Link to="/palette" className="group p-6 rounded-2xl bg-surface-low border border-white/5 hover:border-primary/30 transition-all">
+            <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">Free Random Color Palette Generator</h3>
+            <p className="text-sm text-text-secondary">Generate beautiful random color palettes instantly with one click.</p>
+          </Link>
+          <Link to="/gallery" className="group p-6 rounded-2xl bg-surface-low border border-white/5 hover:border-primary/30 transition-all">
+            <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">Color Palette Inspiration Gallery</h3>
+            <p className="text-sm text-text-secondary">Explore 50,000+ curated color palettes for your next project.</p>
+          </Link>
+          <Link to="/tools/mesh-gradient" className="group p-6 rounded-2xl bg-surface-low border border-white/5 hover:border-primary/30 transition-all">
+            <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">Free CSS Gradient Generator</h3>
+            <p className="text-sm text-text-secondary">Create beautiful CSS mesh gradients with multiple color stops.</p>
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

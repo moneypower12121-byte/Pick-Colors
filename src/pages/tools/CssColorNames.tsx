@@ -46,9 +46,30 @@ export default function CssColorNames() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="CSS Color Names Finder" 
-        description="Search and find official CSS color keywords and their matching HEX values."
-        canonicalUrl="https://pickcolors.xyz/tools/CssColorNames"
+        title="CSS Color Names — Complete List with HEX & RGB | PickColors"
+        description="Search and find all official CSS color keywords with HEX and RGB values. The complete reference tool for web developers."
+        canonicalUrl="https://pickcolors.xyz/tools/css-color-names"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "CSS Color Names Finder",
+          "url": "https://pickcolors.xyz/tools/css-color-names",
+          "description": "Search and find all official CSS color keywords with HEX and RGB values. The complete reference tool for web developers.",
+          "applicationCategory": "DesignApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          },
+          "featureList": "All CSS color names, HEX and RGB values, Search by name, Copy-on-click"
+        }}
       />
       <main className="max-w-6xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
@@ -56,7 +77,9 @@ export default function CssColorNames() {
         </Link>
         
         <div className="mb-12">
-          <h1 className="text-headline mb-4">CSS Color Names Finder</h1>
+          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
+            CSS Color Names — Complete List with HEX & RGB
+          </h1>
           <p className="text-body max-w-2xl">
             Search and find official CSS color keywords.
           </p>

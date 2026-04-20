@@ -50,9 +50,30 @@ export default function TokenExporter() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Design Token Exporter - CSS & Tailwind" 
-        description="Export your palettes directly to CSS variables, Tailwind config, or JSON design tokens."
-        canonicalUrl="https://pickcolors.xyz/tools/TokenExporter"
+        title="Design Token Exporter — CSS, Tailwind & JSON | PickColors"
+        description="Export your color palettes directly to CSS variables, Tailwind config, or JSON design tokens. Bridge the gap between design and development."
+        canonicalUrl="https://pickcolors.xyz/tools/token-exporter"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Design Token Exporter",
+          "url": "https://pickcolors.xyz/tools/token-exporter",
+          "description": "Export your color palettes directly to CSS variables, Tailwind config, or JSON design tokens. Bridge the gap between design and development.",
+          "applicationCategory": "DesignApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          },
+          "featureList": "CSS variables export, Tailwind config, JSON tokens, Design system integration"
+        }}
       />
       <main className="max-w-6xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
@@ -60,7 +81,9 @@ export default function TokenExporter() {
         </Link>
         
         <div className="mb-12">
-          <h1 className="text-headline mb-4">Token Exporter</h1>
+          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
+            Design Token Exporter — CSS, Tailwind & JSON
+          </h1>
           <p className="text-body max-w-2xl">
             Export your palettes directly to CSS variables, Tailwind config, or JSON design tokens.
           </p>

@@ -112,9 +112,30 @@ export default function ImageExtractor() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Image Color Extractor" 
-        description="Upload images to automatically extract dominant color palettes and HEX codes."
-        canonicalUrl="https://pickcolors.xyz/tools/ImageExtractor"
+        title="Image Color Extractor — Extract Colors from Any Image | PickColors"
+        description="Upload any image and extract its dominant color palette instantly. Get HEX, RGB, and HSL codes for every extracted color."
+        canonicalUrl="https://pickcolors.xyz/tools/image-extractor"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Image Color Extractor",
+          "url": "https://pickcolors.xyz/tools/image-extractor",
+          "description": "Upload any image and extract its dominant color palette instantly. Get HEX, RGB, and HSL codes for every extracted color.",
+          "applicationCategory": "DesignApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          },
+          "featureList": "Image upload, Dominant color extraction, HEX and RGB output, Instant results"
+        }}
       />
       <main className="max-w-6xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
@@ -122,7 +143,9 @@ export default function ImageExtractor() {
         </Link>
         
         <div className="mb-12">
-          <h1 className="text-headline mb-4">Image Extractor</h1>
+          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
+            Image Color Extractor
+          </h1>
           <p className="text-body max-w-2xl">
             Pull dominant colors and generate cohesive palettes from any uploaded image.
           </p>

@@ -49,6 +49,21 @@ export default function Home() {
           title="Free Color Picker & Palette Tools — PickColors" 
           description="Pick, convert & generate colors in seconds. 16 free tools for designers & developers — HEX, RGB, HSL, CMYK palettes & more. No sign-up needed."
           canonicalUrl="https://pickcolors.xyz/"
+          jsonLd={{
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz/",
+            "description": "16 free professional color tools for designers and developers. Pick, convert, and generate color palettes with precision.",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://pickcolors.xyz/tools"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }}
         />
         {/* New Animated Hero Section */}
         <section 
@@ -127,7 +142,7 @@ export default function Home() {
                 Click anywhere to remix
               </div>
               <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-tight text-white text-glow transition-transform duration-500 hover:scale-[1.02]">
-                Free Online Color Tools for Designers & Developers
+                Free Color Picker & Palette Tools for Designers
               </h1>
               <p className="text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed font-light">
                 Generate atmospheric palettes with optical precision using the world's most advanced digital prism.
@@ -293,7 +308,7 @@ export default function Home() {
                 >
                   <img 
                     src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=400&q=80" 
-                    alt="palette inspiration" 
+                    alt="Color palette generator preview showing warm tone combinations" 
                     className="w-full h-full object-cover" 
                   />
                 </motion.div>
@@ -304,7 +319,7 @@ export default function Home() {
                 >
                   <img 
                     src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=400&q=80" 
-                    alt="palette inspiration 2" 
+                    alt="Abstract color palette with vibrant gradients for UI design inspiration" 
                     className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" 
                   />
                 </motion.div>

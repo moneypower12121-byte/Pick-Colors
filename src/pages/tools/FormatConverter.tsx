@@ -40,9 +40,30 @@ export default function FormatConverter() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Color Format Converter - HEX to RGB to HSL" 
-        description="Fast HEX to RGB, RGB to HEX, and HSL color code conversions for designers."
-        canonicalUrl="https://pickcolors.xyz/tools/FormatConverter"
+        title="Color Converter — HEX to RGB, HSL, CMYK | PickColors"
+        description="Convert colors between HEX, RGB, HSL, and CMYK formats instantly. The fastest free online color code converter for designers and developers."
+        canonicalUrl="https://pickcolors.xyz/tools/format-converter"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Color Format Converter",
+          "url": "https://pickcolors.xyz/tools/format-converter",
+          "description": "Convert colors between HEX, RGB, HSL, and CMYK formats instantly. The fastest free online color code converter for designers and developers.",
+          "applicationCategory": "DesignApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          },
+          "featureList": "HEX to RGB, RGB to HSL, HSL to HEX, CMYK conversion"
+        }}
       />
       <main className="max-w-4xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
@@ -50,7 +71,9 @@ export default function FormatConverter() {
         </Link>
         
         <div className="mb-12">
-          <h1 className="text-headline mb-4">Format Converter</h1>
+          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
+            Color Format Converter — HEX, RGB, HSL & CMYK
+          </h1>
           <p className="text-body max-w-2xl">
             Seamlessly convert colors between HEX, RGB, HSL, LAB, and CMYK formats.
           </p>

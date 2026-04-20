@@ -104,9 +104,30 @@ export default function ImageUrlExtractor() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Image URL Color Extractor" 
-        description="Extract dominant color palettes directly from any online image URL."
-        canonicalUrl="https://pickcolors.xyz/tools/ImageUrlExtractor"
+        title="Color Palette from Image URL — Extract Online | PickColors"
+        description="Extract color palettes from any online image by URL. Get dominant colors with HEX codes without downloading the image."
+        canonicalUrl="https://pickcolors.xyz/tools/image-url-extractor"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Color Palette from Image URL",
+          "url": "https://pickcolors.xyz/tools/image-url-extractor",
+          "description": "Extract color palettes from any online image by URL. Get dominant colors with HEX codes without downloading the image.",
+          "applicationCategory": "DesignApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          },
+          "featureList": "URL input, Dominant color detection, HEX code output, No download needed"
+        }}
       />
       <main className="max-w-6xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
@@ -114,7 +135,9 @@ export default function ImageUrlExtractor() {
         </Link>
         
         <div className="mb-12">
-          <h1 className="text-headline mb-4">Color Palette from Image URL</h1>
+          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
+            Color Palette Extractor from Image URL
+          </h1>
           <p className="text-body max-w-2xl">
             Extract color palettes from any online image URL.
           </p>

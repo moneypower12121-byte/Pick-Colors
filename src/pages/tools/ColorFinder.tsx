@@ -44,9 +44,30 @@ export default function ColorFinder() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Similar Color Finder by Code" 
-        description="Find similar shades and variations for any HEX or RGB color code."
-        canonicalUrl="https://pickcolors.xyz/tools/ColorFinder"
+        title="Color Finder by Code — Find Shades & Tints | PickColors"
+        description="Find similar shades and color variations for any HEX or RGB code. Discover tints, shades, and related colors for your design palette."
+        canonicalUrl="https://pickcolors.xyz/tools/color-finder"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Color Finder by Code",
+          "url": "https://pickcolors.xyz/tools/color-finder",
+          "description": "Find similar shades and color variations for any HEX or RGB code. Discover tints, shades, and related colors for your design palette.",
+          "applicationCategory": "DesignApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          },
+          "featureList": "Shade variations, Tint generation, Similar color discovery, HEX input"
+        }}
       />
       <main className="max-w-6xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
@@ -54,7 +75,9 @@ export default function ColorFinder() {
         </Link>
         
         <div className="mb-12">
-          <h1 className="text-headline mb-4">Color Finder by Code</h1>
+          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
+            Color Finder — Shades, Tints & Variations
+          </h1>
           <p className="text-body max-w-2xl">
             Find similar shades and variations for any color code.
           </p>

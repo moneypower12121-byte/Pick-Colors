@@ -4,9 +4,10 @@ interface SEOProps {
   title: string;
   description: string;
   canonicalUrl?: string;
+  jsonLd?: object;
 }
 
-export default function SEO({ title, description, canonicalUrl }: SEOProps) {
+export default function SEO({ title, description, canonicalUrl, jsonLd }: SEOProps) {
   const url = canonicalUrl || "https://pickcolors.xyz/";
 
   return (
@@ -31,6 +32,14 @@ export default function SEO({ title, description, canonicalUrl }: SEOProps) {
       <meta name="twitter:image" content="https://pickcolors.xyz/logo-full.png" />
 
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+
+      {/* JSON-LD Schema Markup */}
+      {jsonLd && (
+        <script 
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      )}
     </Helmet>
   );
 }

@@ -41,9 +41,30 @@ background-image:
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Mesh Gradient Generator" 
-        description="Create beautiful CSS mesh gradients with multiple color stops directly in your browser."
-        canonicalUrl="https://pickcolors.xyz/tools/MeshGradient"
+        title="CSS Gradient Generator — Free Mesh Gradient Tool | PickColors"
+        description="Create beautiful CSS mesh gradients with multiple color stops. Copy ready-to-use CSS code instantly for your web projects."
+        canonicalUrl="https://pickcolors.xyz/tools/mesh-gradient"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "CSS Gradient Generator",
+          "url": "https://pickcolors.xyz/tools/mesh-gradient",
+          "description": "Create beautiful CSS mesh gradients with multiple color stops. Copy ready-to-use CSS code instantly for your web projects.",
+          "applicationCategory": "DesignApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          },
+          "featureList": "Multiple color stops, CSS code export, Live preview, Customizable directions"
+        }}
       />
       <main className="max-w-5xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
@@ -51,7 +72,9 @@ background-image:
         </Link>
         
         <div className="mb-12">
-          <h1 className="text-headline mb-4">Mesh Gradient Builder</h1>
+          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
+            Free CSS Gradient Generator
+          </h1>
           <p className="text-body max-w-2xl">
             Create complex, fluid CSS mesh gradients with our visual editor.
           </p>
@@ -123,6 +146,23 @@ background-image:
         </div>
       </main>
       <ToolGuide {...guideData} />
+      <section className="max-w-5xl mx-auto px-6 py-20 border-t border-white/5">
+        <h2 className="text-2xl font-bold mb-8">Related Design Tools</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Link to="/picker" className="group p-6 rounded-2xl bg-surface-low border border-white/5 hover:border-primary/30 transition-all">
+            <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">Free Online Color Picker & HEX RGB HSL Converter</h3>
+            <p className="text-sm text-text-secondary">Precision color selection with real-time conversion and extraction tool.</p>
+          </Link>
+          <Link to="/palette" className="group p-6 rounded-2xl bg-surface-low border border-white/5 hover:border-primary/30 transition-all">
+            <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">Free Random Color Palette Generator</h3>
+            <p className="text-sm text-text-secondary">Generate beautiful random color palettes instantly with one click.</p>
+          </Link>
+          <Link to="/gallery" className="group p-6 rounded-2xl bg-surface-low border border-white/5 hover:border-primary/30 transition-all">
+            <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">Color Palette Inspiration Gallery</h3>
+            <p className="text-sm text-text-secondary">Explore 50,000+ curated color palettes for your next project.</p>
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

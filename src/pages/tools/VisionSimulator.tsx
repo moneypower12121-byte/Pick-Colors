@@ -30,9 +30,30 @@ export default function VisionSimulator() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Color Blindness Vision Simulator" 
-        description="Test your color palettes against various forms of color blindness for better accessibility."
-        canonicalUrl="https://pickcolors.xyz/tools/VisionSimulator"
+        title="Color Blindness Vision Simulator — 8 Vision Types | PickColors"
+        description="Simulate how your designs look to users with color vision deficiencies. Test against 8 types of color blindness for inclusive design."
+        canonicalUrl="https://pickcolors.xyz/tools/vision-simulator"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Color Blindness Vision Simulator",
+          "url": "https://pickcolors.xyz/tools/vision-simulator",
+          "description": "Simulate how your designs look to users with color vision deficiencies. Test against 8 types of color blindness for inclusive design.",
+          "applicationCategory": "DesignApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          },
+          "featureList": "8 vision types, Real-time simulation, Palette testing, Accessibility validation"
+        }}
       />
       {/* SVG Filters for Color Blindness Simulation */}
       <svg style={{ display: 'none' }}>
@@ -58,7 +79,9 @@ export default function VisionSimulator() {
         </Link>
         
         <div className="mb-12">
-          <h1 className="text-headline mb-4">Vision Simulator</h1>
+          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
+            Color Blindness Vision Simulator & Accessibility Audit
+          </h1>
           <p className="text-body max-w-2xl">
             Test your palettes against various forms of color blindness to ensure your designs are accessible to everyone.
           </p>

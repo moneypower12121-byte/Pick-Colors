@@ -27,23 +27,38 @@ export default function Palette() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Random Color Palette Generator" 
-        description="Generate fresh color inspiration and beautiful palettes with a single click."
+        title="Random Color Palette Generator — Free & Instant | PickColors"
+        description="Generate beautiful random color palettes instantly. Get HEX codes for every color. Perfect for designers needing fresh color inspiration."
         canonicalUrl="https://pickcolors.xyz/palette"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Random Color Palette Generator",
+          "url": "https://pickcolors.xyz/palette",
+          "description": "Generate beautiful random color palettes instantly. Get HEX codes for every color. Perfect for designers needing fresh color inspiration.",
+          "applicationCategory": "DesignApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          },
+          "featureList": "One-click generation, HEX codes, Exportable palettes, Infinite variations"
+        }}
       />
       <main className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
-            <motion.h1 
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              className="text-display mb-4"
-            >
-              Harmonic<br/>Generator
-            </motion.h1>
-            <p className="text-body max-w-md">
-              Create perfect color harmonies based on color theory and tonal stacking.
-            </p>
+            <h1 className="text-4xl md:text-6xl font-black tracking-tighter mb-4">
+              Free Random Color Palette Generator
+            </h1>
+            <p className="text-on-surface-variant text-lg">Generate fresh inspiration with a single click.</p>
           <div className="mt-4"><Link to="/blog/random-color-palette-generator" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary-container transition-colors">Read the guide →</Link></div>
           </div>
           
@@ -105,6 +120,23 @@ export default function Palette() {
         </AnimatePresence>
       </main>
       <ToolGuide {...guideData} />
+      <section className="max-w-7xl mx-auto px-6 py-20 border-t border-white/5">
+        <h2 className="text-2xl font-bold mb-8">Related Design Tools</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Link to="/picker" className="group p-6 rounded-2xl bg-surface-low border border-white/5 hover:border-primary/30 transition-all">
+            <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">Free Online Color Picker & HEX RGB HSL Converter</h3>
+            <p className="text-sm text-text-secondary">Precision color selection with real-time conversion and extraction tool.</p>
+          </Link>
+          <Link to="/gallery" className="group p-6 rounded-2xl bg-surface-low border border-white/5 hover:border-primary/30 transition-all">
+            <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">Color Palette Inspiration Gallery</h3>
+            <p className="text-sm text-text-secondary">Explore 50,000+ curated color palettes for your next project.</p>
+          </Link>
+          <Link to="/tools/mesh-gradient" className="group p-6 rounded-2xl bg-surface-low border border-white/5 hover:border-primary/30 transition-all">
+            <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">Free CSS Gradient Generator</h3>
+            <p className="text-sm text-text-secondary">Create beautiful CSS mesh gradients with multiple color stops.</p>
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

@@ -18,7 +18,8 @@ import {
   Link as LinkIcon,
   Tag,
   Search,
-  Hash
+  Hash,
+  ArrowRight
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
@@ -207,7 +208,7 @@ export default function Tools() {
                   to={tool.path || `/tools/${tool.id}`}
                   className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary-container transition-colors mt-auto"
                 >
-                  Launch Tool <span className="group-hover:translate-x-1 transition-transform">→</span>
+                  Open {tool.name} Tool <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </motion.div>
             );

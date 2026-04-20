@@ -31,9 +31,30 @@ export default function AccessibilityChecker() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Accessibility Color Checker" 
-        description="Check your full color palette for WCAG accessibility compliance."
-        canonicalUrl="https://pickcolors.xyz/tools/AccessibilityChecker"
+        title="Accessibility Color Checker — Full Palette WCAG Test | PickColors"
+        description="Check your full color palette for accessibility compliance. Identify which color pairs meet WCAG guidelines for inclusive design."
+        canonicalUrl="https://pickcolors.xyz/tools/accessibility-checker"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Accessibility Color Checker",
+          "url": "https://pickcolors.xyz/tools/accessibility-checker",
+          "description": "Check your full color palette for accessibility compliance. Identify which color pairs meet WCAG guidelines for inclusive design.",
+          "applicationCategory": "DesignApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          },
+          "featureList": "Full palette checking, WCAG compliance, Pass/fail indicators, Pair analysis"
+        }}
       />
       <main className="max-w-6xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
@@ -41,7 +62,9 @@ export default function AccessibilityChecker() {
         </Link>
         
         <div className="mb-12">
-          <h1 className="text-headline mb-4">Accessibility Color Checker</h1>
+          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
+            Accessibility Color Checker
+          </h1>
           <p className="text-body max-w-2xl">
             Check full palette accessibility compliance. See how every color in your palette contrasts with every other color.
           </p>

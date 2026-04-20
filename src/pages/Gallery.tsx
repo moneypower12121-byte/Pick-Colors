@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Search, Filter, X, Copy, Check } from 'lucide-react';
 import chroma from 'chroma-js';
 import { galleryItems } from '../data/palettes';
+import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
 
@@ -84,15 +85,36 @@ export default function Gallery() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Color Palette Gallery" 
-        description="Explore thousands of curated color palettes crafted for modern design."
+        title="Color Palette Inspiration Gallery — 50,000+ Palettes | PickColors"
+        description="Browse 50,000+ curated color palettes. Filter by mood, industry, or saturation. Find the perfect palette for your next design project."
         canonicalUrl="https://pickcolors.xyz/gallery"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Color Palette Inspiration Gallery",
+          "url": "https://pickcolors.xyz/gallery",
+          "description": "Browse 50,000+ curated color palettes. Filter by mood, industry, or saturation. Find the perfect palette for your next design project.",
+          "applicationCategory": "DesignApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          },
+          "featureList": "50,000+ palettes, Filter by mood, Filter by industry, One-click copy"
+        }}
       />
       <main className="max-w-7xl mx-auto">
         <div className="flex flex-col mb-12 gap-6">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div>
-              <h1 className="text-headline mb-2">Curated Gallery</h1>
+              <h1 className="text-headline mb-2">Color Palette Inspiration Gallery</h1>
               <p className="text-body">Explore trending and community-created palettes.</p>
             </div>
             
@@ -257,6 +279,23 @@ export default function Gallery() {
           </motion.div>
         )}
       </main>
+      <section className="max-w-7xl mx-auto px-6 py-20 border-t border-white/5">
+        <h2 className="text-2xl font-bold mb-8">Related Design Tools</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Link to="/picker" className="group p-6 rounded-2xl bg-surface-low border border-white/5 hover:border-primary/30 transition-all">
+            <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">Free Online Color Picker & HEX RGB HSL Converter</h3>
+            <p className="text-sm text-text-secondary">Precision color selection with real-time conversion and extraction tool.</p>
+          </Link>
+          <Link to="/palette" className="group p-6 rounded-2xl bg-surface-low border border-white/5 hover:border-primary/30 transition-all">
+            <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">Free Random Color Palette Generator</h3>
+            <p className="text-sm text-text-secondary">Generate beautiful random color palettes instantly with one click.</p>
+          </Link>
+          <Link to="/tools/mesh-gradient" className="group p-6 rounded-2xl bg-surface-low border border-white/5 hover:border-primary/30 transition-all">
+            <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">Free CSS Gradient Generator</h3>
+            <p className="text-sm text-text-secondary">Create beautiful CSS mesh gradients with multiple color stops.</p>
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

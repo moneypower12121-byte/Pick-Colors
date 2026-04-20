@@ -30,9 +30,30 @@ export default function ContrastChecker() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Color Contrast Checker - WCAG Accessibility Tool" 
-        description="Check color contrast for accessibility using WCAG guidelines. Ensure your website and designs are readable for all users."
+        title="Color Contrast Checker — WCAG 2.1 AA & AAA | PickColors"
+        description="Test color contrast ratios for WCAG 2.1 accessibility compliance. Check AA and AAA pass/fail status for text and background color pairs."
         canonicalUrl="https://pickcolors.xyz/tools/contrast-checker"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Color Contrast Checker",
+          "url": "https://pickcolors.xyz/tools/contrast-checker",
+          "description": "Test color contrast ratios for WCAG 2.1 accessibility compliance. Check AA and AAA pass/fail status for text and background color pairs.",
+          "applicationCategory": "DesignApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          },
+          "featureList": "WCAG 2.1 compliance, AA and AAA testing, Real-time ratio calculation, HEX input"
+        }}
       />
       <main className="max-w-5xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
@@ -40,7 +61,9 @@ export default function ContrastChecker() {
         </Link>
         
         <div className="mb-12">
-          <h1 className="text-headline mb-4">Contrast Checker</h1>
+          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
+            WCAG 2.1 Color Contrast Checker — Free Accessibility Tool
+          </h1>
           <p className="text-body max-w-2xl">
             Ensure your text is readable and WCAG compliant. Good contrast is essential for accessibility.
           </p>
