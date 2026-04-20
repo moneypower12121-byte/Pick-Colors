@@ -169,7 +169,7 @@ Yes, it works perfectly for logos and photos.
     slug: 'color-harmonies-generator',
     title: 'Color Harmonies Generator – Create Perfect Color Combinations Easily',
     metaDescription: 'Generate beautiful and balanced color combinations using our free color harmonies generator tool. Perfect for designers and branding.',
-    image: 'https://images.unsplash.com/photo-1513364776144-60967fc0f80c?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=1200&auto=format&fit=crop',
     date: 'April 7, 2026',
     content: `
 ## What is a Color Harmonies Generator?
