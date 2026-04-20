@@ -58,10 +58,10 @@ console.log(`Prerendering ${uniqueRoutes.length} routes...`);
     const { helmet } = helmetContext;
     let appHead = '';
     
-    // React 19 native hoisting support: extract tags from the start of the HTML string
-    // React 19 often puts hoisted tags (title, meta, link) at the very beginning of the rendered string.
+    // React 19 native hoisting support: extract tags including content (like <title>text</title>)
     let appHtml = rawHtml;
-    const hoistedMatch = rawHtml.match(/^((?:<(?:title|meta|link|script|style)[^>]*>)+)/);
+    const hoistedRegex = /^((?:<title>.*?<\/title>|<meta[^>]*\/?>|<link[^>]*\/?>|<script[^>]*>.*?<\/script>|<style[^>]*>.*?<\/style>)+)/i;
+    const hoistedMatch = rawHtml.match(hoistedRegex);
     if (hoistedMatch && hoistedMatch[1]) {
       appHead += hoistedMatch[1];
       appHtml = rawHtml.substring(hoistedMatch[1].length);
