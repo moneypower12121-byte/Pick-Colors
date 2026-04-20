@@ -5,9 +5,12 @@ import { ArrowLeft, Upload, Image as ImageIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ColorSwatchPro from '../../components/ColorSwatchPro';
 import SEO from '../../components/SEO';
+import ToolGuide from '../../components/ToolGuide';
+import { toolGuides } from '../../data/toolGuides';
 
 
 export default function ImageExtractor() {
+  const guideData = toolGuides['image-extractor'];
   const [imageUrl, setImageUrl] = useState<string | null>(null);
   const [extractedColors, setExtractedColors] = useState<string[]>([]);
   const [isExtracting, setIsExtracting] = useState(false);
@@ -199,6 +202,7 @@ export default function ImageExtractor() {
           </div>
         </div>
       </main>
+      <ToolGuide {...guideData} />
     </div>
   );
 }

@@ -3,9 +3,12 @@ import { motion } from 'motion/react';
 import { ArrowLeft, Copy, Check, Plus, Trash2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../../components/SEO';
+import ToolGuide from '../../components/ToolGuide';
+import { toolGuides } from '../../data/toolGuides';
 
 
 export default function TokenExporter() {
+  const guideData = toolGuides['token-exporter'];
   const [palette, setPalette] = useState([
     { id: 1, name: 'primary', hex: '#80D0FF' },
     { id: 2, name: 'secondary', hex: '#37A1D5' },
@@ -148,6 +151,7 @@ export default function TokenExporter() {
           </div>
         </div>
       </main>
+      <ToolGuide {...guideData} />
     </div>
   );
 }

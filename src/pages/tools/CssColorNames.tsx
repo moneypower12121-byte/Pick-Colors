@@ -4,6 +4,8 @@ import { ArrowLeft, Search, Copy, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import chroma from 'chroma-js';
 import SEO from '../../components/SEO';
+import ToolGuide from '../../components/ToolGuide';
+import { toolGuides } from '../../data/toolGuides';
 
 
 const CSS_COLORS = [
@@ -27,6 +29,7 @@ const CSS_COLORS = [
 ];
 
 export default function CssColorNames() {
+  const guideData = toolGuides['css-color-names'];
   const [search, setSearch] = useState('');
   const [copiedName, setCopiedName] = useState<string | null>(null);
 
@@ -112,6 +115,7 @@ export default function CssColorNames() {
           </div>
         )}
       </main>
+      <ToolGuide {...guideData} />
     </div>
   );
 }

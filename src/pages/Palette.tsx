@@ -4,9 +4,12 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Wand2, RefreshCw } from 'lucide-react';
 import ColorSwatchPro from '../components/ColorSwatchPro';
 import SEO from '../components/SEO';
+import ToolGuide from '../components/ToolGuide';
+import { toolGuides } from '../data/toolGuides';
 
 
 export default function Palette() {
+  const guideData = toolGuides['palette'];
   const [baseHue, setBaseHue] = useState(200);
 
   const generatePalette = () => {
@@ -101,6 +104,7 @@ export default function Palette() {
           </motion.div>
         </AnimatePresence>
       </main>
+      <ToolGuide {...guideData} />
     </div>
   );
 }

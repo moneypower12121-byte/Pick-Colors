@@ -4,9 +4,12 @@ import { ArrowLeft, Type } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import chroma from 'chroma-js';
 import SEO from '../../components/SEO';
+import ToolGuide from '../../components/ToolGuide';
+import { toolGuides } from '../../data/toolGuides';
 
 
 export default function ReadabilityTester() {
+  const guideData = toolGuides['readability-tester'];
   const [textColor, setTextColor] = useState('#FFFFFF');
   const [bgColor, setBgColor] = useState('#141313');
   const [text, setText] = useState('The quick brown fox jumps over the lazy dog.');
@@ -115,6 +118,7 @@ export default function ReadabilityTester() {
           </div>
         </div>
       </main>
+      <ToolGuide {...guideData} />
     </div>
   );
 }

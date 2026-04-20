@@ -3,9 +3,12 @@ import { motion } from 'motion/react';
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../../components/SEO';
+import ToolGuide from '../../components/ToolGuide';
+import { toolGuides } from '../../data/toolGuides';
 
 
 export default function VisionSimulator() {
+  const guideData = toolGuides['vision-simulator'];
   const [palette, setPalette] = useState([
     '#FF003C', '#FCEE09', '#00FFF5', '#050A30', '#80D0FF'
   ]);
@@ -114,6 +117,7 @@ export default function VisionSimulator() {
           ))}
         </div>
       </main>
+      <ToolGuide {...guideData} />
     </div>
   );
 }

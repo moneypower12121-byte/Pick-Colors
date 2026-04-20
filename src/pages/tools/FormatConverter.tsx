@@ -4,9 +4,12 @@ import chroma from 'chroma-js';
 import { ArrowLeft, Copy, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../../components/SEO';
+import ToolGuide from '../../components/ToolGuide';
+import { toolGuides } from '../../data/toolGuides';
 
 
 export default function FormatConverter() {
+  const guideData = toolGuides['format-converter'];
   const [input, setInput] = useState('#80D0FF');
   const [color, setColor] = useState<chroma.Color | null>(chroma('#80D0FF'));
   const [copiedFormat, setCopiedFormat] = useState<string | null>(null);
@@ -99,6 +102,7 @@ export default function FormatConverter() {
           </div>
         )}
       </main>
+      <ToolGuide {...guideData} />
     </div>
   );
 }

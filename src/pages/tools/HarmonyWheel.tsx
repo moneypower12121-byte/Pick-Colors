@@ -5,9 +5,12 @@ import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ColorSwatchPro from '../../components/ColorSwatchPro';
 import SEO from '../../components/SEO';
+import ToolGuide from '../../components/ToolGuide';
+import { toolGuides } from '../../data/toolGuides';
 
 
 export default function HarmonyWheel() {
+  const guideData = toolGuides['harmony-wheel'];
   const [baseColor, setBaseColor] = useState('#FF4E00');
 
   const getHarmonies = (hex: string) => {
@@ -101,6 +104,7 @@ export default function HarmonyWheel() {
           </div>
         )}
       </main>
+      <ToolGuide {...guideData} />
     </div>
   );
 }

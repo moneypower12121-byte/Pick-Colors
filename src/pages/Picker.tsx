@@ -4,9 +4,12 @@ import { motion } from 'motion/react';
 import { SlidersHorizontal, Maximize2 } from 'lucide-react';
 import ColorSwatchPro from '../components/ColorSwatchPro';
 import SEO from '../components/SEO';
+import ToolGuide from '../components/ToolGuide';
+import { toolGuides } from '../data/toolGuides';
 
 
 export default function Picker() {
+  const guideData = toolGuides['picker'];
   const [hue, setHue] = useState(200);
   const [saturation, setSaturation] = useState(80);
   const [lightness, setLightness] = useState(50);
@@ -120,6 +123,7 @@ export default function Picker() {
           </div>
         </div>
       </main>
+      <ToolGuide {...guideData} />
     </div>
   );
 }

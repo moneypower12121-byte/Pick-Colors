@@ -4,8 +4,11 @@ import chroma from 'chroma-js';
 import { ArrowLeft, CheckCircle2, XCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../../components/SEO';
+import ToolGuide from '../../components/ToolGuide';
+import { toolGuides } from '../../data/toolGuides';
 
 export default function ContrastChecker() {
+  const guideData = toolGuides['contrast-checker'];
   const [fgColor, setFgColor] = useState('#FFFFFF');
   const [bgColor, setBgColor] = useState('#141313');
 
@@ -157,6 +160,8 @@ export default function ContrastChecker() {
           </motion.div>
         </div>
       </main>
+      
+      <ToolGuide {...guideData} />
     </div>
   );
 }

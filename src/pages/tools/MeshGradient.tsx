@@ -3,9 +3,12 @@ import { motion } from 'motion/react';
 import { ArrowLeft, Copy, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../../components/SEO';
+import ToolGuide from '../../components/ToolGuide';
+import { toolGuides } from '../../data/toolGuides';
 
 
 export default function MeshGradient() {
+  const guideData = toolGuides['mesh-gradient'];
   const [colors, setColors] = useState([
     '#FF003C',
     '#FCEE09',
@@ -119,6 +122,7 @@ background-image:
           />
         </div>
       </main>
+      <ToolGuide {...guideData} />
     </div>
   );
 }

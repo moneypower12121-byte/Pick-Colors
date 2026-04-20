@@ -4,9 +4,12 @@ import chroma from 'chroma-js';
 import { ArrowLeft, Copy, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../../components/SEO';
+import ToolGuide from '../../components/ToolGuide';
+import { toolGuides } from '../../data/toolGuides';
 
 
 export default function ColorInterpolator() {
+  const guideData = toolGuides['color-interpolator'];
   const [color1, setColor1] = useState('#80D0FF');
   const [color2, setColor2] = useState('#FF003C');
   const [steps, setSteps] = useState(7);
@@ -124,6 +127,7 @@ export default function ColorInterpolator() {
           </div>
         )}
       </main>
+      <ToolGuide {...guideData} />
     </div>
   );
 }

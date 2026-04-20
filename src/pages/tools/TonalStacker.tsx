@@ -4,9 +4,12 @@ import chroma from 'chroma-js';
 import { ArrowLeft, Copy, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../../components/SEO';
+import ToolGuide from '../../components/ToolGuide';
+import { toolGuides } from '../../data/toolGuides';
 
 
 export default function TonalStacker() {
+  const guideData = toolGuides['tonal-stacker'];
   const [baseColor, setBaseColor] = useState('#37A1D5');
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
 
@@ -107,6 +110,7 @@ export default function TonalStacker() {
           </div>
         )}
       </main>
+      <ToolGuide {...guideData} />
     </div>
   );
 }

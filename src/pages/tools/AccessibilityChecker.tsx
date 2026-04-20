@@ -4,9 +4,12 @@ import { ArrowLeft, CheckCircle2, XCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import chroma from 'chroma-js';
 import SEO from '../../components/SEO';
+import ToolGuide from '../../components/ToolGuide';
+import { toolGuides } from '../../data/toolGuides';
 
 
 export default function AccessibilityChecker() {
+  const guideData = toolGuides['accessibility-checker'];
   const [palette, setPalette] = useState([
     '#141313', '#1C1B1B', '#80D0FF', '#37A1D5', '#FFFFFF'
   ]);
@@ -117,6 +120,7 @@ export default function AccessibilityChecker() {
           </table>
         </div>
       </main>
+      <ToolGuide {...guideData} />
     </div>
   );
 }

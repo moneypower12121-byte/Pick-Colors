@@ -5,9 +5,12 @@ import { Link } from 'react-router-dom';
 import ColorSwatchPro from '../../components/ColorSwatchPro';
 import chroma from 'chroma-js';
 import SEO from '../../components/SEO';
+import ToolGuide from '../../components/ToolGuide';
+import { toolGuides } from '../../data/toolGuides';
 
 
 export default function ColorFinder() {
+  const guideData = toolGuides['color-finder'];
   const [color, setColor] = useState('#80D0FF');
 
   let baseColor = chroma('#80D0FF');
@@ -98,6 +101,7 @@ export default function ColorFinder() {
           </div>
         </div>
       </main>
+      <ToolGuide {...guideData} />
     </div>
   );
 }
