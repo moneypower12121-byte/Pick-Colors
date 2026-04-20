@@ -15,7 +15,7 @@ export const blogs: BlogPostData[] = [
     slug: 'color-picker-converter',
     title: 'Free Color Picker & Converter Tool (HEX, RGB, HSL) – Instant Online Tool',
     metaDescription: 'Pick any color and convert HEX, RGB, and HSL instantly with our free online color picker tool. Fast, accurate, and perfect for designers.',
-    image: '/color-picker-blog.png',
+    image: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1200&auto=format&fit=crop',
     date: 'April 11, 2026',
     content: `
 ## What is a Color Picker & Converter?
@@ -60,7 +60,7 @@ Yes, this tool converts both ways instantly.
     slug: 'gradient-generator',
     title: 'Free CSS Gradient Generator – Create Beautiful Backgrounds Online',
     metaDescription: 'Create stunning CSS gradients with multiple colors using our free gradient generator tool. Copy ready-to-use CSS code instantly.',
-    image: '/gradient-generator-blog.png',
+    image: 'https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=1200&auto=format&fit=crop',
     date: 'April 10, 2026',
     content: `
 ## What is a Gradient Generator?
@@ -98,7 +98,7 @@ Yes, this tool gives you ready CSS code.
     slug: 'random-color-palette-generator',
     title: 'Random Color Palette Generator – Get Creative Color Ideas Instantly',
     metaDescription: 'Generate beautiful random color palettes for design, branding, and UI projects. Free online color palette generator.',
-    image: '/random-color-palette-blog.png',
+    image: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?q=80&w=1200&auto=format&fit=crop',
     date: 'April 9, 2026',
     content: `
 ## What is a Color Palette Generator?
@@ -136,7 +136,7 @@ Yes, every click generates a new palette.
     slug: 'image-color-extractor',
     title: 'Extract Colors from Image Online – Free Image Color Extractor Tool',
     metaDescription: 'Upload any image and extract dominant colors instantly. Perfect for designers and branding projects.',
-    image: 'https://picsum.photos/seed/extractor/1200/600',
+    image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1200&auto=format&fit=crop',
     date: 'April 8, 2026',
     content: `
 ## What is Image Color Extractor?
@@ -169,7 +169,7 @@ Yes, it works perfectly for logos and photos.
     slug: 'color-harmonies-generator',
     title: 'Color Harmonies Generator – Create Perfect Color Combinations Easily',
     metaDescription: 'Generate beautiful and balanced color combinations using our free color harmonies generator tool. Perfect for designers and branding.',
-    image: 'https://picsum.photos/seed/harmonies/1200/600',
+    image: 'https://images.unsplash.com/photo-1513364776144-60967fc0f80c?q=80&w=1200&auto=format&fit=crop',
     date: 'April 7, 2026',
     content: `
 ## What is a Color Harmonies Generator?
@@ -202,7 +202,7 @@ It is the opposite color on the color wheel.
     slug: 'color-contrast-checker',
     title: 'Color Contrast Checker – Test Accessibility (WCAG) Online Free',
     metaDescription: 'Check color contrast for accessibility using WCAG guidelines. Ensure your website is readable for all users.',
-    image: 'https://picsum.photos/seed/contrast/1200/600',
+    image: 'https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1200&auto=format&fit=crop',
     date: 'April 6, 2026',
     content: `
 ## What is Contrast Checker?
@@ -235,7 +235,7 @@ It is a standard for web accessibility.
     slug: 'text-readability-tester',
     title: 'Text Readability Tester – Improve UI Text Visibility Online',
     metaDescription: 'Test how readable your text is across different sizes and backgrounds. Free online readability tester tool.',
-    image: 'https://picsum.photos/seed/readability/1200/600',
+    image: 'https://images.unsplash.com/photo-1505685679686-2490cab6217d?q=80&w=1200&auto=format&fit=crop',
     date: 'April 5, 2026',
     content: `
 ## What is Readability Tester?
@@ -263,7 +263,7 @@ It improves user engagement and usability.
     slug: 'accessibility-color-checker',
     title: 'Accessibility Color Checker – Full Palette WCAG Compliance Tool',
     metaDescription: 'Check your full color palette for accessibility compliance. Ensure your design is user-friendly and inclusive.',
-    image: 'https://picsum.photos/seed/accessibility/1200/600',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
     date: 'April 4, 2026',
     content: `
 ## What is Accessibility Color Checker?
@@ -287,7 +287,7 @@ It checks if all colors in your palette meet accessibility standards.
     slug: 'color-finder-by-code',
     title: 'Find Similar Colors by Code – Free Color Finder Tool',
     metaDescription: 'Enter any color code and find similar shades instantly. Perfect for designers and developers.',
-    image: 'https://picsum.photos/seed/colorfinder/1200/600',
+    image: 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=1200&auto=format&fit=crop',
     date: 'April 3, 2026',
     content: `
 ## What is Color Finder?
@@ -311,7 +311,7 @@ This tool helps you find similar colors based on a given HEX or RGB code.
     slug: 'css-color-names-finder',
     title: 'CSS Color Names Finder – Find Official Color Keywords Easily',
     metaDescription: 'Search and find official CSS color names with this free tool. Perfect for web developers.',
-    image: 'https://picsum.photos/seed/csscolors/1200/600',
+    image: 'https://images.unsplash.com/photo-1506606401543-2e73709cebb4?q=80&w=1200&auto=format&fit=crop',
     date: 'April 2, 2026',
     content: `
 ## What is CSS Color Names Finder?
@@ -330,7 +330,7 @@ It helps you find standard CSS color names like red, blue, green.
     slug: 'color-blindness-simulator',
     title: 'Color Blindness Simulator – Test Your Design Accessibility',
     metaDescription: 'Simulate different types of color blindness and test your design accessibility easily.',
-    image: 'https://picsum.photos/seed/colorblindness/1200/600',
+    image: 'https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=80&w=1200&auto=format&fit=crop',
     date: 'April 1, 2026',
     content: `
 ## What is Vision Simulator?
@@ -349,7 +349,7 @@ It shows how your design looks to people with color blindness.
     slug: 'tonal-stacker-tool',
     title: 'Tonal Stacker Tool – Generate Shades and Tints Instantly',
     metaDescription: 'Create perfect shades and tints from a single color using this free tonal stacker tool.',
-    image: 'https://picsum.photos/seed/tonalstacker/1200/600',
+    image: 'https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?q=80&w=1200&auto=format&fit=crop',
     date: 'March 31, 2026',
     content: `
 ## What is Tonal Stacker?
@@ -368,7 +368,7 @@ It generates lighter and darker variations of a base color.
     slug: 'color-interpolator',
     title: 'Color Interpolator – Generate Smooth Color Transitions Online',
     metaDescription: 'Create smooth transitions between two colors with this free interpolator tool.',
-    image: 'https://picsum.photos/seed/interpolator/1200/600',
+    image: 'https://images.unsplash.com/photo-1550684376-efcbd6e3f031?q=80&w=1200&auto=format&fit=crop',
     date: 'March 30, 2026',
     content: `
 ## What is Color Interpolator?
@@ -387,7 +387,7 @@ It creates gradient steps between two colors.
     slug: 'brand-color-matcher',
     title: 'Brand Color Matcher – Match Colors with Top Brands',
     metaDescription: 'Compare your colors with popular brand palettes and find the closest matches.',
-    image: 'https://picsum.photos/seed/brandmatcher/1200/600',
+    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1200&auto=format&fit=crop',
     date: 'March 29, 2026',
     content: `
 ## What is Brand Matcher?
@@ -406,7 +406,7 @@ It compares your color with famous brand colors.
     slug: 'design-token-exporter',
     title: 'Design Token Exporter – Export Colors to CSS, Tailwind & JSON',
     metaDescription: 'Export your color palette into CSS variables, Tailwind config, or JSON tokens easily.',
-    image: 'https://picsum.photos/seed/tokenexporter/1200/600',
+    image: 'https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1200&auto=format&fit=crop',
     date: 'March 28, 2026',
     content: `
 ## What is Token Exporter?
