@@ -109,15 +109,10 @@ export default function Footer() {
 
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-8 mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div className="relative z-10 max-w-7xl mx-auto px-8 mt-24 pt-8 border-t border-white/10 flex flex-col items-center">
         <p className="font-['Inter'] text-xs text-[#BEC8D0] flex items-center gap-2">
           © {new Date().getFullYear()} PickColors. All rights reserved.
         </p>
-        <div className="flex gap-4 text-xs font-mono text-[#BEC8D0]/50">
-          <span>DESIGNED FOR WEB</span>
-          <span>•</span>
-          <span>BUILT WITH REACT</span>
-        </div>
       </div>
     </footer>
   );

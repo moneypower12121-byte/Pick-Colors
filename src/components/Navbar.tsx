@@ -30,13 +30,13 @@ export default function Navbar() {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className={`pointer-events-auto rounded-full transition-all duration-500 ${
+          className={`pointer-events-auto rounded-full transition-all duration-500 w-full max-w-6xl mx-auto ${
             scrolled 
               ? 'bg-[#141313]/90 backdrop-blur-2xl border border-white/10 shadow-[0_8px_32px_-8px_rgba(0,0,0,0.8)] px-6 py-3' 
               : 'bg-[#141313]/50 backdrop-blur-md border border-white/5 shadow-lg px-8 py-4'
           }`}
         >
-          <div className="flex justify-between items-center w-full min-w-[280px] md:min-w-[600px] font-['Inter'] font-medium tracking-tight">
+          <div className="flex justify-between items-center w-full font-['Inter'] font-medium tracking-tight">
             <Link to="/" className="flex items-center" onClick={() => setIsOpen(false)}>
               <img src="/logo-full.png" alt="PickColors Logo" className="h-7 w-auto object-contain transition-transform hover:scale-105" referrerPolicy="no-referrer" />
             </Link>
