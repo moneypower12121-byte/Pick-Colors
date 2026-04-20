@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, Copy, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
+
 
 export default function MeshGradient() {
   const [colors, setColors] = useState([
@@ -35,6 +37,11 @@ background-image:
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="Mesh Gradient Generator" 
+        description="Create beautiful CSS mesh gradients with multiple color stops directly in your browser."
+        canonicalUrl="https://pickcolors.xyz/tools/MeshGradient"
+      />
       <main className="max-w-5xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4" /> Back to Tools

@@ -1,8 +1,15 @@
 import { motion } from 'motion/react';
+import SEO from '../components/SEO';
+
 
 export default function About() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="About Us" 
+        description="The Digital Prism. We believe that color is the foundation of digital emotion."
+        canonicalUrl="https://pickcolors.xyz/about"
+      />
       <main className="max-w-4xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

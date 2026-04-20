@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft, Copy, Check, Plus, Trash2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
+
 
 export default function TokenExporter() {
   const [palette, setPalette] = useState([
@@ -44,6 +46,11 @@ export default function TokenExporter() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="Design Token Exporter - CSS & Tailwind" 
+        description="Export your palettes directly to CSS variables, Tailwind config, or JSON design tokens."
+        canonicalUrl="https://pickcolors.xyz/tools/TokenExporter"
+      />
       <main className="max-w-6xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4" /> Back to Tools

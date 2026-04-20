@@ -4,6 +4,8 @@ import chroma from 'chroma-js';
 import { ArrowLeft, Upload, Image as ImageIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ColorSwatchPro from '../../components/ColorSwatchPro';
+import SEO from '../../components/SEO';
+
 
 export default function ImageExtractor() {
   const [imageUrl, setImageUrl] = useState<string | null>(null);
@@ -106,6 +108,11 @@ export default function ImageExtractor() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="Image Color Extractor" 
+        description="Upload images to automatically extract dominant color palettes and HEX codes."
+        canonicalUrl="https://pickcolors.xyz/tools/ImageExtractor"
+      />
       <main className="max-w-6xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4" /> Back to Tools

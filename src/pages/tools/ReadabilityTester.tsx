@@ -3,6 +3,8 @@ import { motion } from 'motion/react';
 import { ArrowLeft, Type } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import chroma from 'chroma-js';
+import SEO from '../../components/SEO';
+
 
 export default function ReadabilityTester() {
   const [textColor, setTextColor] = useState('#FFFFFF');
@@ -25,6 +27,11 @@ export default function ReadabilityTester() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="Text Readability Tester" 
+        description="Preview text readability across different sizes and background colors."
+        canonicalUrl="https://pickcolors.xyz/tools/ReadabilityTester"
+      />
       <main className="max-w-5xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4" /> Back to Tools

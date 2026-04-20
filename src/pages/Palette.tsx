@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Wand2, RefreshCw } from 'lucide-react';
 import ColorSwatchPro from '../components/ColorSwatchPro';
+import SEO from '../components/SEO';
+
 
 export default function Palette() {
   const [baseHue, setBaseHue] = useState(200);
@@ -21,6 +23,11 @@ export default function Palette() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="Random Color Palette Generator" 
+        description="Generate fresh color inspiration and beautiful palettes with a single click."
+        canonicalUrl="https://pickcolors.xyz/palette"
+      />
       <main className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>

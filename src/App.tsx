@@ -35,7 +35,7 @@ import ToolFallback from './pages/tools/ToolFallback';
 
 export default function App() {
   return (
-    <Router>
+    <>
       <BackgroundAnimation />
       <div className="min-h-screen text-on-surface selection:bg-primary/30 selection:text-white flex flex-col relative z-0">
         <Navbar />
@@ -76,6 +76,6 @@ export default function App() {
         </div>
         <Footer />
       </div>
-    </Router>
+    </>
   );
 }

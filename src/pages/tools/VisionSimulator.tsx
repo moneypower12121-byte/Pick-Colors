@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { motion } from 'motion/react';
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
+
 
 export default function VisionSimulator() {
   const [palette, setPalette] = useState([
@@ -24,6 +26,11 @@ export default function VisionSimulator() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="Color Blindness Vision Simulator" 
+        description="Test your color palettes against various forms of color blindness for better accessibility."
+        canonicalUrl="https://pickcolors.xyz/tools/VisionSimulator"
+      />
       {/* SVG Filters for Color Blindness Simulation */}
       <svg style={{ display: 'none' }}>
         <defs>

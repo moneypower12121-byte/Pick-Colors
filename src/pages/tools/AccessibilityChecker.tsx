@@ -3,6 +3,8 @@ import { motion } from 'motion/react';
 import { ArrowLeft, CheckCircle2, XCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import chroma from 'chroma-js';
+import SEO from '../../components/SEO';
+
 
 export default function AccessibilityChecker() {
   const [palette, setPalette] = useState([
@@ -25,6 +27,11 @@ export default function AccessibilityChecker() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="Accessibility Color Checker" 
+        description="Check your full color palette for WCAG accessibility compliance."
+        canonicalUrl="https://pickcolors.xyz/tools/AccessibilityChecker"
+      />
       <main className="max-w-6xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4" /> Back to Tools

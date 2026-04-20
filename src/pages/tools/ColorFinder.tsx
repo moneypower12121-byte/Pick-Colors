@@ -4,6 +4,8 @@ import { ArrowLeft, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ColorSwatchPro from '../../components/ColorSwatchPro';
 import chroma from 'chroma-js';
+import SEO from '../../components/SEO';
+
 
 export default function ColorFinder() {
   const [color, setColor] = useState('#80D0FF');
@@ -38,6 +40,11 @@ export default function ColorFinder() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="Similar Color Finder by Code" 
+        description="Find similar shades and variations for any HEX or RGB color code."
+        canonicalUrl="https://pickcolors.xyz/tools/ColorFinder"
+      />
       <main className="max-w-6xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4" /> Back to Tools

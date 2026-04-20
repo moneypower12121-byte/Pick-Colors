@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Palette, Eye, Terminal, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -44,6 +45,11 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-surface text-on-surface font-body selection:bg-primary/30 overflow-x-hidden">
       <main>
+        <SEO 
+          title="Pick Colors - The Digital Prism" 
+          description="Generate atmospheric palettes with optical precision using the world's most advanced digital prism. Precision color tools for designers and developers."
+          canonicalUrl="https://pickcolors.xyz/"
+        />
         {/* New Animated Hero Section */}
         <section 
           className="relative min-h-[1024px] flex flex-col items-center justify-center pt-20 overflow-hidden mesh-gradient-animated cursor-pointer" 

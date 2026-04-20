@@ -3,6 +3,8 @@ import { motion } from 'motion/react';
 import chroma from 'chroma-js';
 import { ArrowLeft, Copy, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
+
 
 export default function ColorInterpolator() {
   const [color1, setColor1] = useState('#80D0FF');
@@ -25,6 +27,11 @@ export default function ColorInterpolator() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="Color Interpolator - Smooth Color Transitions" 
+        description="Generate smooth, mathematically precise transitional steps between two base colors."
+        canonicalUrl="https://pickcolors.xyz/tools/ColorInterpolator"
+      />
       <main className="max-w-5xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4" /> Back to Tools

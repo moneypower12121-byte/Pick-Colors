@@ -1,9 +1,16 @@
 import { motion } from 'motion/react';
 import { Mail, MessageSquare, MapPin } from 'lucide-react';
+import SEO from '../components/SEO';
+
 
 export default function Contact() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="Contact Us" 
+        description="Get in touch with the PickColors team for support, business inquiries, or feedback."
+        canonicalUrl="https://pickcolors.xyz/contact"
+      />
       <main className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-headline mb-4">Get in Touch</h1>

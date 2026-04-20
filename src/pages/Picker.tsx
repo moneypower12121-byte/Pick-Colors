@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { SlidersHorizontal, Maximize2 } from 'lucide-react';
 import ColorSwatchPro from '../components/ColorSwatchPro';
+import SEO from '../components/SEO';
+
 
 export default function Picker() {
   const [hue, setHue] = useState(200);
@@ -15,6 +17,11 @@ export default function Picker() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="Color Picker & Converter - Online Hex & RGB Tool" 
+        description="Pick colors visually and convert seamlessly between HEX, RGB, and HSL formats."
+        canonicalUrl="https://pickcolors.xyz/picker"
+      />
       <main className="max-w-7xl mx-auto">
         <div className="mb-12">
           <h1 className="text-headline mb-4">The Light Table</h1>

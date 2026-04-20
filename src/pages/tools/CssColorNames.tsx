@@ -3,6 +3,8 @@ import { motion } from 'motion/react';
 import { ArrowLeft, Search, Copy, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import chroma from 'chroma-js';
+import SEO from '../../components/SEO';
+
 
 const CSS_COLORS = [
   "aliceblue", "antiquewhite", "aqua", "aquamarine", "azure", "beige", "bisque", "black", "blanchedalmond", "blue", 
@@ -40,6 +42,11 @@ export default function CssColorNames() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="CSS Color Names Finder" 
+        description="Search and find official CSS color keywords and their matching HEX values."
+        canonicalUrl="https://pickcolors.xyz/tools/CssColorNames"
+      />
       <main className="max-w-6xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4" /> Back to Tools

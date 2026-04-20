@@ -4,6 +4,8 @@ import { ArrowLeft, Link as LinkIcon, Loader2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ColorSwatchPro from '../../components/ColorSwatchPro';
 import chroma from 'chroma-js';
+import SEO from '../../components/SEO';
+
 
 export default function ImageUrlExtractor() {
   const [url, setUrl] = useState('');
@@ -98,6 +100,11 @@ export default function ImageUrlExtractor() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="Image URL Color Extractor" 
+        description="Extract dominant color palettes directly from any online image URL."
+        canonicalUrl="https://pickcolors.xyz/tools/ImageUrlExtractor"
+      />
       <main className="max-w-6xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4" /> Back to Tools

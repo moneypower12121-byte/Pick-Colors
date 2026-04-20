@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Search, Filter, X, Copy, Check } from 'lucide-react';
 import chroma from 'chroma-js';
 import { galleryItems } from '../data/palettes';
+import SEO from '../components/SEO';
+
 
 const HUE_CATEGORIES = [
   { id: 'red', name: 'Red', color: '#EF4444' },
@@ -81,6 +83,11 @@ export default function Gallery() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="Color Palette Gallery" 
+        description="Explore thousands of curated color palettes crafted for modern design."
+        canonicalUrl="https://pickcolors.xyz/gallery"
+      />
       <main className="max-w-7xl mx-auto">
         <div className="flex flex-col mb-12 gap-6">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">

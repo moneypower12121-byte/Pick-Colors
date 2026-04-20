@@ -4,6 +4,8 @@ import chroma from 'chroma-js';
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ColorSwatchPro from '../../components/ColorSwatchPro';
+import SEO from '../../components/SEO';
+
 
 export default function HarmonyWheel() {
   const [baseColor, setBaseColor] = useState('#FF4E00');
@@ -52,6 +54,11 @@ export default function HarmonyWheel() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="Color Harmonies Generator" 
+        description="Discover perfect color combinations and harmonies for your UI designs."
+        canonicalUrl="https://pickcolors.xyz/tools/HarmonyWheel"
+      />
       <main className="max-w-7xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4" /> Back to Tools

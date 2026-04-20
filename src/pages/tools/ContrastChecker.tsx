@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import chroma from 'chroma-js';
 import { ArrowLeft, CheckCircle2, XCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 
 export default function ContrastChecker() {
   const [fgColor, setFgColor] = useState('#FFFFFF');
@@ -25,6 +26,11 @@ export default function ContrastChecker() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="Color Contrast Checker - WCAG Accessibility Tool" 
+        description="Check color contrast for accessibility using WCAG guidelines. Ensure your website and designs are readable for all users."
+        canonicalUrl="https://pickcolors.xyz/tools/contrast-checker"
+      />
       <main className="max-w-5xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4" /> Back to Tools

@@ -21,6 +21,7 @@ import {
   Hash
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const tools = [
   {
@@ -158,6 +159,11 @@ const tools = [
 export default function Tools() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="16 Free Professional Color Tools" 
+        description="The complete suite for color manipulation, analysis, and extraction. Contrast checkers, gradient generators, format converters and more."
+        canonicalUrl="https://pickcolors.xyz/tools"
+      />
       <main className="max-w-7xl mx-auto">
         <div className="mb-16">
           <motion.h1 

@@ -4,6 +4,7 @@ import { ArrowLeft, Calendar } from 'lucide-react';
 import Markdown from 'react-markdown';
 import { blogs } from '../data/blogs';
 import NotFound from './NotFound';
+import SEO from '../components/SEO';
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
@@ -15,6 +16,11 @@ export default function BlogPost() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title={`${blog.title} - PickColors Blog`} 
+        description={blog.metaDescription}
+        canonicalUrl={`https://pickcolors.xyz/blog/${blog.slug}`}
+      />
       <main className="max-w-6xl mx-auto">
         <Link to="/blog" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4" /> Back to Blog

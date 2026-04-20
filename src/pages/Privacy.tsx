@@ -1,10 +1,17 @@
 import { motion } from 'motion/react';
 import { ArrowLeft, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
+
 
 export default function Privacy() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="Privacy Policy" 
+        description="Read our privacy policy to understand how we protect your data at PickColors."
+        canonicalUrl="https://pickcolors.xyz/privacy"
+      />
       <main className="max-w-3xl mx-auto">
         <Link to="/" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4" /> Back to Home

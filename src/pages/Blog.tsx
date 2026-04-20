@@ -3,6 +3,8 @@ import { motion } from 'motion/react';
 import { BookOpen, ArrowRight, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { blogs } from '../data/blogs';
+import SEO from '../components/SEO';
+
 
 export default function Blog() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -18,6 +20,11 @@ export default function Blog() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="The Chromatic Blog - Color Theory & Tools" 
+        description="Read our latest articles on color theory, design systems, and tool features."
+        canonicalUrl="https://pickcolors.xyz/blog"
+      />
       <main className="max-w-7xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

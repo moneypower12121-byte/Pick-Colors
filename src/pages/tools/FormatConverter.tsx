@@ -3,6 +3,8 @@ import { motion } from 'motion/react';
 import chroma from 'chroma-js';
 import { ArrowLeft, Copy, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
+
 
 export default function FormatConverter() {
   const [input, setInput] = useState('#80D0FF');
@@ -34,6 +36,11 @@ export default function FormatConverter() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <SEO 
+        title="Color Format Converter - HEX to RGB to HSL" 
+        description="Fast HEX to RGB, RGB to HEX, and HSL color code conversions for designers."
+        canonicalUrl="https://pickcolors.xyz/tools/FormatConverter"
+      />
       <main className="max-w-4xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4" /> Back to Tools
