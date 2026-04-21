@@ -105,14 +105,14 @@ export default function ImageUrlExtractor() {
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
         title="Color Palette from Image URL — Extract Online | PickColors"
-        description="Extract color palettes from any online image by URL. Get dominant colors with HEX codes without downloading the image."
+        description="Extract dominant colors from any image URL online. Get HEX color codes from web images without downloading. Free URL color extractor tool."
         canonicalUrl="https://pickcolors.xyz/tools/image-url-extractor"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "Color Palette from Image URL",
           "url": "https://pickcolors.xyz/tools/image-url-extractor",
-          "description": "Extract color palettes from any online image by URL. Get dominant colors with HEX codes without downloading the image.",
+          "description": "Extract dominant colors from any image URL online. Get HEX color codes from web images without downloading. Free URL color extractor tool.",
           "applicationCategory": "DesignApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
@@ -125,8 +125,7 @@ export default function ImageUrlExtractor() {
             "@type": "Organization",
             "name": "PickColors",
             "url": "https://pickcolors.xyz"
-          },
-          "featureList": "URL input, Dominant color detection, HEX code output, No download needed"
+          }
         }}
       />
       <main className="max-w-6xl mx-auto">

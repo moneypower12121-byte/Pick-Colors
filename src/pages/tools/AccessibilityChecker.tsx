@@ -32,14 +32,14 @@ export default function AccessibilityChecker() {
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
         title="Accessibility Color Checker — Full Palette WCAG Test | PickColors"
-        description="Check your full color palette for accessibility compliance. Identify which color pairs meet WCAG guidelines for inclusive design."
+        description="Check your entire color palette for WCAG accessibility compliance. Identify which color pairs pass AA and AAA standards. Free accessibility checker."
         canonicalUrl="https://pickcolors.xyz/tools/accessibility-checker"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "Accessibility Color Checker",
           "url": "https://pickcolors.xyz/tools/accessibility-checker",
-          "description": "Check your full color palette for accessibility compliance. Identify which color pairs meet WCAG guidelines for inclusive design.",
+          "description": "Check your entire color palette for WCAG accessibility compliance. Identify which color pairs pass AA and AAA standards. Free accessibility checker.",
           "applicationCategory": "DesignApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
@@ -52,8 +52,7 @@ export default function AccessibilityChecker() {
             "@type": "Organization",
             "name": "PickColors",
             "url": "https://pickcolors.xyz"
-          },
-          "featureList": "Full palette checking, WCAG compliance, Pass/fail indicators, Pair analysis"
+          }
         }}
       />
       <main className="max-w-6xl mx-auto">
@@ -63,7 +62,7 @@ export default function AccessibilityChecker() {
         
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
-            Accessibility Color Checker
+            Accessibility Color Checker — WCAG Compliance
           </h1>
           <p className="text-body max-w-2xl">
             Check full palette accessibility compliance. See how every color in your palette contrasts with every other color.

@@ -86,14 +86,14 @@ export default function Gallery() {
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
         title="Color Palette Inspiration Gallery — 50,000+ Palettes | PickColors"
-        description="Browse 50,000+ curated color palettes. Filter by mood, industry, or saturation. Find the perfect palette for your next design project."
+        description="Browse 50,000+ curated color palettes. Filter by mood, industry & saturation. Find perfect color combinations for your next design project."
         canonicalUrl="https://pickcolors.xyz/gallery"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "Color Palette Inspiration Gallery",
           "url": "https://pickcolors.xyz/gallery",
-          "description": "Browse 50,000+ curated color palettes. Filter by mood, industry, or saturation. Find the perfect palette for your next design project.",
+          "description": "Browse 50,000+ curated color palettes. Filter by mood, industry & saturation. Find perfect color combinations for your next design project.",
           "applicationCategory": "DesignApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
@@ -106,8 +106,7 @@ export default function Gallery() {
             "@type": "Organization",
             "name": "PickColors",
             "url": "https://pickcolors.xyz"
-          },
-          "featureList": "50,000+ palettes, Filter by mood, Filter by industry, One-click copy"
+          }
         }}
       />
       <main className="max-w-7xl mx-auto">

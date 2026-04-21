@@ -7,9 +7,9 @@ export default function Footer() {
     <footer className="relative bg-[#0A0A0A] w-full pt-32 pb-12 overflow-hidden border-t border-white/5">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden flex justify-center items-center opacity-30 select-none">
-        <h1 className="text-[15vw] font-black font-['Inter'] text-transparent bg-clip-text bg-gradient-to-b from-white/10 to-transparent leading-none whitespace-nowrap">
+        <p className="text-[15vw] font-black font-['Inter'] text-transparent bg-clip-text bg-gradient-to-b from-white/10 to-transparent leading-none whitespace-nowrap">
           PICKCOLORS
-        </h1>
+        </p>
       </div>
       
       <div className="absolute top-0 right-0 w-[50vw] h-[50vw] bg-primary/10 rounded-full blur-[150px] -translate-y-1/2 translate-x-1/4 pointer-events-none" />

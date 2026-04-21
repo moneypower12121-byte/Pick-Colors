@@ -113,14 +113,14 @@ export default function ImageExtractor() {
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
         title="Image Color Extractor — Extract Colors from Any Image | PickColors"
-        description="Upload any image and extract its dominant color palette instantly. Get HEX, RGB, and HSL codes for every extracted color."
+        description="Upload any image and extract its dominant color palette. Get HEX, RGB & HSL codes for every color instantly. Free image color extractor tool."
         canonicalUrl="https://pickcolors.xyz/tools/image-extractor"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "Image Color Extractor",
           "url": "https://pickcolors.xyz/tools/image-extractor",
-          "description": "Upload any image and extract its dominant color palette instantly. Get HEX, RGB, and HSL codes for every extracted color.",
+          "description": "Upload any image and extract its dominant color palette. Get HEX, RGB & HSL codes for every color instantly. Free image color extractor tool.",
           "applicationCategory": "DesignApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
@@ -133,8 +133,7 @@ export default function ImageExtractor() {
             "@type": "Organization",
             "name": "PickColors",
             "url": "https://pickcolors.xyz"
-          },
-          "featureList": "Image upload, Dominant color extraction, HEX and RGB output, Instant results"
+          }
         }}
       />
       <main className="max-w-6xl mx-auto">
@@ -144,7 +143,7 @@ export default function ImageExtractor() {
         
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
-            Image Color Extractor
+            Image Color Extractor — Upload & Get HEX Codes
           </h1>
           <p className="text-body max-w-2xl">
             Pull dominant colors and generate cohesive palettes from any uploaded image.

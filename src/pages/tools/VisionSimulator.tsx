@@ -30,15 +30,15 @@ export default function VisionSimulator() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Color Blindness Vision Simulator — 8 Vision Types | PickColors"
-        description="Simulate how your designs look to users with color vision deficiencies. Test against 8 types of color blindness for inclusive design."
+        title="Color Blindness Simulator — 8 Vision Types | PickColors"
+        description="Simulate how designs look with 8 types of color blindness. Test your palettes for color vision deficiency. Free vision simulator for designers."
         canonicalUrl="https://pickcolors.xyz/tools/vision-simulator"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "Color Blindness Vision Simulator",
           "url": "https://pickcolors.xyz/tools/vision-simulator",
-          "description": "Simulate how your designs look to users with color vision deficiencies. Test against 8 types of color blindness for inclusive design.",
+          "description": "Simulate how designs look with 8 types of color blindness. Test your palettes for color vision deficiency. Free vision simulator for designers.",
           "applicationCategory": "DesignApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
@@ -51,8 +51,7 @@ export default function VisionSimulator() {
             "@type": "Organization",
             "name": "PickColors",
             "url": "https://pickcolors.xyz"
-          },
-          "featureList": "8 vision types, Real-time simulation, Palette testing, Accessibility validation"
+          }
         }}
       />
       {/* SVG Filters for Color Blindness Simulation */}
@@ -80,7 +79,7 @@ export default function VisionSimulator() {
         
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
-            Color Blindness Vision Simulator & Accessibility Audit
+            Color Blindness Vision Simulator — 8 Types
           </h1>
           <p className="text-body max-w-2xl">
             Test your palettes against various forms of color blindness to ensure your designs are accessible to everyone.

@@ -51,14 +51,14 @@ export default function TokenExporter() {
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
         title="Design Token Exporter — CSS, Tailwind & JSON | PickColors"
-        description="Export your color palettes directly to CSS variables, Tailwind config, or JSON design tokens. Bridge the gap between design and development."
+        description="Export color palettes to CSS variables, Tailwind config, or JSON design tokens. The ultimate bridge between design and development. Free design token tool."
         canonicalUrl="https://pickcolors.xyz/tools/token-exporter"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "Design Token Exporter",
           "url": "https://pickcolors.xyz/tools/token-exporter",
-          "description": "Export your color palettes directly to CSS variables, Tailwind config, or JSON design tokens. Bridge the gap between design and development.",
+          "description": "Export color palettes to CSS variables, Tailwind config, or JSON design tokens. The ultimate bridge between design and development. Free design token tool.",
           "applicationCategory": "DesignApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
@@ -71,8 +71,7 @@ export default function TokenExporter() {
             "@type": "Organization",
             "name": "PickColors",
             "url": "https://pickcolors.xyz"
-          },
-          "featureList": "CSS variables export, Tailwind config, JSON tokens, Design system integration"
+          }
         }}
       />
       <main className="max-w-6xl mx-auto">

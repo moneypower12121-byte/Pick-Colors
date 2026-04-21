@@ -40,15 +40,15 @@ export default function FormatConverter() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Color Converter — HEX to RGB, HSL, CMYK | PickColors"
-        description="Convert colors between HEX, RGB, HSL, and CMYK formats instantly. The fastest free online color code converter for designers and developers."
+        title="Color Converter — HEX to RGB, HSL & CMYK | PickColors"
+        description="Convert HEX to RGB, RGB to HSL, and CMYK instantly. The fastest free online color format converter for designers and developers."
         canonicalUrl="https://pickcolors.xyz/tools/format-converter"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "Color Format Converter",
           "url": "https://pickcolors.xyz/tools/format-converter",
-          "description": "Convert colors between HEX, RGB, HSL, and CMYK formats instantly. The fastest free online color code converter for designers and developers.",
+          "description": "Convert HEX to RGB, RGB to HSL, and CMYK instantly. The fastest free online color format converter for designers and developers.",
           "applicationCategory": "DesignApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
@@ -61,8 +61,7 @@ export default function FormatConverter() {
             "@type": "Organization",
             "name": "PickColors",
             "url": "https://pickcolors.xyz"
-          },
-          "featureList": "HEX to RGB, RGB to HSL, HSL to HEX, CMYK conversion"
+          }
         }}
       />
       <main className="max-w-4xl mx-auto">

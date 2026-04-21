@@ -43,14 +43,14 @@ export default function TonalStacker() {
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
         title="Tints & Shades Generator — Color Scale Builder | PickColors"
-        description="Generate perfect tints and shades from any base color automatically. Create complete color scales for design systems and UI components."
+        description="Generate perfect tints and shades for any color. Create complete monochromatic color scales for design systems. Free online color scale builder."
         canonicalUrl="https://pickcolors.xyz/tools/tonal-stacker"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "Tints and Shades Generator",
           "url": "https://pickcolors.xyz/tools/tonal-stacker",
-          "description": "Generate perfect tints and shades from any base color automatically. Create complete color scales for design systems and UI components.",
+          "description": "Generate perfect tints and shades for any color. Create complete monochromatic color scales for design systems. Free online color scale builder.",
           "applicationCategory": "DesignApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
@@ -63,8 +63,7 @@ export default function TonalStacker() {
             "@type": "Organization",
             "name": "PickColors",
             "url": "https://pickcolors.xyz"
-          },
-          "featureList": "Automatic tint generation, Shade scales, Design system ready, HEX export"
+          }
         }}
       />
       <main className="max-w-5xl mx-auto">

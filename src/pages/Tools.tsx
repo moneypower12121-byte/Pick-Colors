@@ -161,9 +161,29 @@ export default function Tools() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="16 Free Professional Color Tools" 
+        title="16 Free Online Color Tools for Designers & Developers | PickColors"
         description="Explore 16 free professional color tools — color picker, palette generator, contrast checker, gradient maker, vision simulator & more. Built for designers & developers."
         canonicalUrl="https://pickcolors.xyz/tools"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "PickColors Color Tools",
+          "url": "https://pickcolors.xyz/tools",
+          "description": "Explore 16 free professional color tools — color picker, palette generator, contrast checker, gradient maker, vision simulator & more.",
+          "applicationCategory": "DesignApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          }
+        }}
       />
       <main className="max-w-7xl mx-auto">
         <div className="mb-16">
@@ -172,7 +192,7 @@ export default function Tools() {
             animate={{ opacity: 1, y: 0 }}
             className="text-headline mb-4"
           >
-            Professional Tools
+            16 Free Online Color Tools for Designers & Developers
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}

@@ -31,14 +31,14 @@ export default function ContrastChecker() {
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
         title="Color Contrast Checker — WCAG 2.1 AA & AAA | PickColors"
-        description="Test color contrast ratios for WCAG 2.1 accessibility compliance. Check AA and AAA pass/fail status for text and background color pairs."
+        description="Check color contrast ratios for WCAG 2.1 accessibility. Test AA and AAA compliance for text & background colors. Free online contrast checker."
         canonicalUrl="https://pickcolors.xyz/tools/contrast-checker"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "Color Contrast Checker",
           "url": "https://pickcolors.xyz/tools/contrast-checker",
-          "description": "Test color contrast ratios for WCAG 2.1 accessibility compliance. Check AA and AAA pass/fail status for text and background color pairs.",
+          "description": "Check color contrast ratios for WCAG 2.1 accessibility. Test AA and AAA compliance for text & background colors. Free online contrast checker.",
           "applicationCategory": "DesignApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
@@ -51,8 +51,7 @@ export default function ContrastChecker() {
             "@type": "Organization",
             "name": "PickColors",
             "url": "https://pickcolors.xyz"
-          },
-          "featureList": "WCAG 2.1 compliance, AA and AAA testing, Real-time ratio calculation, HEX input"
+          }
         }}
       />
       <main className="max-w-5xl mx-auto">
@@ -62,7 +61,7 @@ export default function ContrastChecker() {
         
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
-            WCAG 2.1 Color Contrast Checker — Free Accessibility Tool
+            Color Contrast Checker — WCAG 2.1 AA & AAA
           </h1>
           <p className="text-body max-w-2xl">
             Ensure your text is readable and WCAG compliant. Good contrast is essential for accessibility.

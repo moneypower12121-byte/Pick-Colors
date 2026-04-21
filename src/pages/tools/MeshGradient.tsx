@@ -42,14 +42,14 @@ background-image:
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
         title="CSS Gradient Generator — Free Mesh Gradient Tool | PickColors"
-        description="Create beautiful CSS mesh gradients with multiple color stops. Copy ready-to-use CSS code instantly for your web projects."
+        description="Create beautiful CSS mesh gradients online. Multiple color stops, live preview & instant CSS code export. Free gradient generator for web designers."
         canonicalUrl="https://pickcolors.xyz/tools/mesh-gradient"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "CSS Gradient Generator",
           "url": "https://pickcolors.xyz/tools/mesh-gradient",
-          "description": "Create beautiful CSS mesh gradients with multiple color stops. Copy ready-to-use CSS code instantly for your web projects.",
+          "description": "Create beautiful CSS mesh gradients online. Multiple color stops, live preview & instant CSS code export. Free gradient generator for web designers.",
           "applicationCategory": "DesignApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
@@ -62,8 +62,7 @@ background-image:
             "@type": "Organization",
             "name": "PickColors",
             "url": "https://pickcolors.xyz"
-          },
-          "featureList": "Multiple color stops, CSS code export, Live preview, Customizable directions"
+          }
         }}
       />
       <main className="max-w-5xl mx-auto">
@@ -73,7 +72,7 @@ background-image:
         
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
-            Free CSS Gradient Generator
+            Free CSS Mesh Gradient Generator
           </h1>
           <p className="text-body max-w-2xl">
             Create complex, fluid CSS mesh gradients with our visual editor.

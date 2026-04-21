@@ -31,9 +31,29 @@ export default function ColorInterpolator() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Color Interpolator - Smooth Color Transitions" 
-        description="Generate smooth, mathematically precise transitional steps between two base colors."
-        canonicalUrl="https://pickcolors.xyz/tools/ColorInterpolator"
+        title="Color Interpolator — Smooth Color Transitions | PickColors"
+        description="Generate smooth, mathematically precise transitional color steps between two colors. Create custom gradients & color scales. Free color interpolator tool."
+        canonicalUrl="https://pickcolors.xyz/tools/color-interpolator"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Color Interpolator",
+          "url": "https://pickcolors.xyz/tools/color-interpolator",
+          "description": "Generate smooth, mathematically precise transitional color steps between two colors. Create custom gradients & color scales. Free color interpolator tool.",
+          "applicationCategory": "DesignApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "creator": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          }
+        }}
       />
       <main className="max-w-5xl mx-auto">
         <Link to="/tools" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
@@ -41,7 +61,9 @@ export default function ColorInterpolator() {
         </Link>
         
         <div className="mb-12">
-          <h1 className="text-headline mb-4">Color Interpolator</h1>
+          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
+            Color Interpolator — Smooth Color Transitions
+          </h1>
           <p className="text-body max-w-2xl">
             Generate smooth, mathematically precise transitional steps between two base colors.
           </p>

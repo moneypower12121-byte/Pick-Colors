@@ -28,14 +28,14 @@ export default function Palette() {
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
         title="Random Color Palette Generator — Free & Instant | PickColors"
-        description="Generate beautiful random color palettes instantly. Get HEX codes for every color. Perfect for designers needing fresh color inspiration."
+        description="Generate random color palettes with one click. Get instant HEX codes for every color. Free palette generator for designers — no sign-up needed."
         canonicalUrl="https://pickcolors.xyz/palette"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "Random Color Palette Generator",
           "url": "https://pickcolors.xyz/palette",
-          "description": "Generate beautiful random color palettes instantly. Get HEX codes for every color. Perfect for designers needing fresh color inspiration.",
+          "description": "Generate random color palettes with one click. Get instant HEX codes for every color. Free palette generator for designers — no sign-up needed.",
           "applicationCategory": "DesignApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
@@ -48,8 +48,7 @@ export default function Palette() {
             "@type": "Organization",
             "name": "PickColors",
             "url": "https://pickcolors.xyz"
-          },
-          "featureList": "One-click generation, HEX codes, Exportable palettes, Infinite variations"
+          }
         }}
       />
       <main className="max-w-7xl mx-auto">

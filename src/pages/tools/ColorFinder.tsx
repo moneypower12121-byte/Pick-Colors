@@ -45,14 +45,14 @@ export default function ColorFinder() {
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
         title="Color Finder by Code — Find Shades & Tints | PickColors"
-        description="Find similar shades and color variations for any HEX or RGB code. Discover tints, shades, and related colors for your design palette."
+        description="Find similar colors, tints and shades for any HEX or RGB code. Discover color variations for your design palette. Free color finder online."
         canonicalUrl="https://pickcolors.xyz/tools/color-finder"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          "name": "Color Finder by Code",
+          "name": "Color Finder",
           "url": "https://pickcolors.xyz/tools/color-finder",
-          "description": "Find similar shades and color variations for any HEX or RGB code. Discover tints, shades, and related colors for your design palette.",
+          "description": "Find similar colors, tints and shades for any HEX or RGB code. Discover color variations for your design palette. Free color finder online.",
           "applicationCategory": "DesignApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
@@ -65,8 +65,7 @@ export default function ColorFinder() {
             "@type": "Organization",
             "name": "PickColors",
             "url": "https://pickcolors.xyz"
-          },
-          "featureList": "Shade variations, Tint generation, Similar color discovery, HEX input"
+          }
         }}
       />
       <main className="max-w-6xl mx-auto">

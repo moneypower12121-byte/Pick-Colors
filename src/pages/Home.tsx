@@ -142,7 +142,7 @@ export default function Home() {
                 Click anywhere to remix
               </div>
               <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-tight text-white text-glow transition-transform duration-500 hover:scale-[1.02]">
-                Free Color Picker & Palette Tools for Designers
+                Free Online Color Tools for Designers & Developers
               </h1>
               <p className="text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed font-light">
                 Generate atmospheric palettes with optical precision using the world's most advanced digital prism.

@@ -47,14 +47,14 @@ export default function CssColorNames() {
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
         title="CSS Color Names — Complete List with HEX & RGB | PickColors"
-        description="Search and find all official CSS color keywords with HEX and RGB values. The complete reference tool for web developers."
+        description="Find all official CSS color names with HEX and RGB values. Complete reference for web developers. Search, copy & use CSS colors instantly."
         canonicalUrl="https://pickcolors.xyz/tools/css-color-names"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "CSS Color Names Finder",
           "url": "https://pickcolors.xyz/tools/css-color-names",
-          "description": "Search and find all official CSS color keywords with HEX and RGB values. The complete reference tool for web developers.",
+          "description": "Find all official CSS color names with HEX and RGB values. Complete reference for web developers. Search, copy & use CSS colors instantly.",
           "applicationCategory": "DesignApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
@@ -67,8 +67,7 @@ export default function CssColorNames() {
             "@type": "Organization",
             "name": "PickColors",
             "url": "https://pickcolors.xyz"
-          },
-          "featureList": "All CSS color names, HEX and RGB values, Search by name, Copy-on-click"
+          }
         }}
       />
       <main className="max-w-6xl mx-auto">

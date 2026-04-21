@@ -21,15 +21,15 @@ export default function Picker() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="Free Online Color Picker — HEX, RGB, HSL | PickColors"
-        description="Free online color picker with real-time HEX, RGB & HSL conversion. Pick any color visually, extract from images, and copy code instantly."
+        title="Free Online Color Picker — HEX, RGB & HSL | PickColors"
+        description="Free online color picker with real-time HEX, RGB & HSL conversion. Pick any color visually, extract from images, and copy code instantly. No install needed."
         canonicalUrl="https://pickcolors.xyz/picker"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "Free Online Color Picker",
           "url": "https://pickcolors.xyz/picker",
-          "description": "Free online color picker with real-time HEX, RGB & HSL conversion. Pick any color visually, extract from images, and copy code instantly.",
+          "description": "Free online color picker with real-time HEX, RGB & HSL conversion. Pick any color visually, extract from images, and copy code instantly. No install needed.",
           "applicationCategory": "DesignApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
@@ -42,8 +42,7 @@ export default function Picker() {
             "@type": "Organization",
             "name": "PickColors",
             "url": "https://pickcolors.xyz"
-          },
-          "featureList": "Real-time HEX conversion, RGB and HSL output, Visual color spectrum, Eyedropper tool"
+          }
         }}
       />
       <main className="max-w-7xl mx-auto">

@@ -59,14 +59,14 @@ export default function HarmonyWheel() {
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
         title="Color Harmonies Generator — Complementary & Analogous | PickColors"
-        description="Discover perfect color combinations using color theory. Generate complementary, analogous, triadic, and split-complementary color schemes."
+        description="Generate complementary, analogous & triadic color schemes instantly. Free color harmony wheel for designers. Export HEX codes in one click."
         canonicalUrl="https://pickcolors.xyz/tools/harmony-wheel"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "Color Harmonies Generator",
           "url": "https://pickcolors.xyz/tools/harmony-wheel",
-          "description": "Discover perfect color combinations using color theory. Generate complementary, analogous, triadic, and split-complementary color schemes.",
+          "description": "Generate complementary, analogous & triadic color schemes instantly. Free color harmony wheel for designers. Export HEX codes in one click.",
           "applicationCategory": "DesignApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
@@ -79,8 +79,7 @@ export default function HarmonyWheel() {
             "@type": "Organization",
             "name": "PickColors",
             "url": "https://pickcolors.xyz"
-          },
-          "featureList": "Complementary colors, Analogous schemes, Triadic combinations, HEX export"
+          }
         }}
       />
       <main className="max-w-7xl mx-auto">
@@ -90,7 +89,7 @@ export default function HarmonyWheel() {
         
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
-            Color Harmonies & Scheme Generator
+            Color Harmonies & Color Scheme Generator
           </h1>
           <p className="text-body max-w-2xl">
             Generate classic color theory relationships based on a single starting color.
