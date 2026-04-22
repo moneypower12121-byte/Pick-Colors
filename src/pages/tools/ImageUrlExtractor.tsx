@@ -135,7 +135,7 @@ export default function ImageUrlExtractor() {
         
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
-            Color Palette Extractor from Image URL
+            Color Palette from Image URL — Extract Instantly
           </h1>
           <p className="text-body max-w-2xl">
             Extract color palettes from any online image URL.

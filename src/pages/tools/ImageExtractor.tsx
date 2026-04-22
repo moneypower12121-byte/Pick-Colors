@@ -143,7 +143,7 @@ export default function ImageExtractor() {
         
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
-            Image Color Extractor — Upload & Get HEX Codes
+            Color Palette Extractor from Image (HEX, RGB)
           </h1>
           <p className="text-body max-w-2xl">
             Pull dominant colors and generate cohesive palettes from any uploaded image.

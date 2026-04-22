@@ -113,7 +113,7 @@ export default function Gallery() {
         <div className="flex flex-col mb-12 gap-6">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div>
-              <h1 className="text-headline mb-2">Color Palette Inspiration Gallery</h1>
+              <h1 className="text-headline mb-2">Inspiration Gallery — 100+ Professional Color Palettes</h1>
               <p className="text-body">Explore trending and community-created palettes.</p>
             </div>
             

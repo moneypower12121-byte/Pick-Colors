@@ -62,7 +62,7 @@ export default function ReadabilityTester() {
         
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
-            Text Readability & Accessibility Tester
+            Text Readability Tester & UI Contrast Audit
           </h1>
           <p className="text-body max-w-2xl">
             Preview text readability across different sizes and backgrounds.

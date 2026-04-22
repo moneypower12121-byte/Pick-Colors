@@ -62,7 +62,7 @@ export default function AccessibilityChecker() {
         
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tighter">
-            Accessibility Color Checker — WCAG Compliance
+            Accessibility Color Checker — Full Palette Audit
           </h1>
           <p className="text-body max-w-2xl">
             Check full palette accessibility compliance. See how every color in your palette contrasts with every other color.
