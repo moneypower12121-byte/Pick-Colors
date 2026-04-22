@@ -1,20 +1,31 @@
 {
+  "rewrites": [
+    {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap.xml"
+    },
+    {
+      "source": "/robots.txt", 
+      "destination": "/robots.txt"
+    },
+    {
+      "source": "/((?!sitemap.xml|robots.txt|favicon.png|logo-full.png|assets/).*)",
+      "destination": "/index.html"
+    }
+  ],
   "headers": [
     {
       "source": "/sitemap.xml",
       "headers": [
         { "key": "Content-Type", "value": "text/xml; charset=utf-8" },
-        { "key": "X-Robots-Tag", "value": "noindex" }
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
       ]
     },
     {
       "source": "/robots.txt",
       "headers": [
-        { "key": "Content-Type", "value": "text/plain" }
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
       ]
     }
-  ],
-  "rewrites": [
-    { "source": "/((?!sitemap.xml|robots.txt|assets/.*).*)", "destination": "/index.html" }
   ]
 }
