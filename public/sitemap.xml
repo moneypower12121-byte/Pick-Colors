@@ -71,6 +71,22 @@
   <url><loc>https://pickcolors.xyz/blog/brand-color-matcher</loc><lastmod>2026-04-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pickcolors.xyz/blog/design-token-exporter</loc><lastmod>2026-04-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
+  <url><loc>https://pickcolors.xyz/blog/hex-vs-rgb-vs-hsl</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pickcolors.xyz/blog/create-color-palette-website</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pickcolors.xyz/blog/wcag-color-contrast</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pickcolors.xyz/blog/color-blindness-design-accessibility</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pickcolors.xyz/blog/extract-colors-from-image</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pickcolors.xyz/blog/tailwind-css-color-palette</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pickcolors.xyz/blog/complementary-vs-analogous-colors</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pickcolors.xyz/blog/choose-brand-colors</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pickcolors.xyz/blog/color-theory-web-design</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pickcolors.xyz/blog/css-color-names-reference</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pickcolors.xyz/blog/hsl-colors-css</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pickcolors.xyz/blog/wcag-aa-vs-aaa</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pickcolors.xyz/blog/design-token-colors</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pickcolors.xyz/blog/dark-mode-color-system</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pickcolors.xyz/blog/css-color-gradients</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
   <!-- Legal & Support -->
   <url><loc>https://pickcolors.xyz/about</loc><lastmod>2026-04-22</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://pickcolors.xyz/contact</loc><lastmod>2026-04-22</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
