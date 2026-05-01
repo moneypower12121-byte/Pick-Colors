@@ -21,9 +21,21 @@ export default function Blog() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title="The Chromatic Blog - Color Theory & Tools" 
-        description="Read our latest articles on color theory, design systems, and tool features."
+        title="Color Design Blog — Tips, Tools & Tutorials | PickColors" 
+        description="Learn color theory, CSS color tips, accessibility, and design systems. Free tutorials for designers and developers. Explore 15+ expert articles."
         canonicalUrl="https://pickcolors.xyz/blog"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Blog",
+          "name": "PickColors Blog",
+          "url": "https://pickcolors.xyz/blog",
+          "description": "Color theory, CSS tips, accessibility guides, and design system tutorials for designers and developers.",
+          "publisher": {
+            "@type": "Organization",
+            "name": "PickColors",
+            "url": "https://pickcolors.xyz"
+          }
+        }}
       />
       <main className="max-w-7xl mx-auto">
         <motion.div 
@@ -35,7 +47,7 @@ export default function Blog() {
             <BookOpen className="w-8 h-8 text-primary" />
           </div>
           <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-6">
-            The Prism <span className="text-transparent bg-clip-text bg-gradient-to-br from-primary to-primary-container">Blog</span>
+            Color Design & <br/> <span className="text-transparent bg-clip-text bg-gradient-to-br from-primary to-primary-container">Development Blog</span>
           </h1>
           <p className="text-on-surface-variant text-xl font-light leading-relaxed max-w-2xl mx-auto mb-12">
             Insights on color theory, design systems, and the future of digital aesthetics.
@@ -98,6 +110,30 @@ export default function Blog() {
           ))}
         </div>
         )}
+
+        {/* SEO Content Section */}
+        <section className="mt-24 pt-24 border-t border-white/5">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8">Color Design Resources for Designers & Developers</h2>
+            <p className="text-on-surface-variant text-lg leading-relaxed mb-6">
+              The PickColors blog covers color theory fundamentals, 
+              CSS color techniques, accessibility standards, and 
+              practical design system guidance. Whether you're learning 
+              about WCAG contrast requirements, building a Tailwind 
+              color system, or extracting colors from images — 
+              our guides are written for working designers and 
+              developers who need practical answers fast.
+            </p>
+            
+            <h3 className="text-2xl font-bold mb-6">Popular Topics</h3>
+            <p className="text-on-surface-variant text-lg leading-relaxed">
+              CSS color formats (HEX, RGB, HSL), color accessibility 
+              (WCAG AA and AAA), color palette generation, image color 
+              extraction, brand color systems, design tokens, and 
+              CSS gradients.
+            </p>
+          </div>
+        </section>
       </main>
     </div>
   );

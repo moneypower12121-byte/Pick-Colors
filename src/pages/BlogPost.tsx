@@ -17,9 +17,10 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <SEO 
-        title={`${blog.title} - PickColors Blog`} 
+        title={`${blog.title} | PickColors`} 
         description={blog.metaDescription}
         canonicalUrl={`https://pickcolors.xyz/blog/${blog.slug}`}
+        jsonLd={blog.jsonLd}
       />
       <main className="max-w-6xl mx-auto">
         <Link to="/blog" className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-white mb-8 transition-colors">
