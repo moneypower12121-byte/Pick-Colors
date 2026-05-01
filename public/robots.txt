@@ -1,81 +1,19 @@
-# =============================================
-# PickColors.xyz - robots.txt
-# Optimized for SEO & AI Bot Protection
-# =============================================
+User-agent: *
+Allow: /
 
-# --- Core Search Engines (Allow Everything) ---
+# Allow Google clearly
 User-agent: Googlebot
 Allow: /
 
-User-agent: Googlebot-Image
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-# --- Standard Blocked Paths ---
-User-agent: *
-Allow: /
-Disallow: /api/
-Disallow: /_next/
-Disallow: /admin/
-
-# =============================================
-# AI Crawlers & Scrapers — BLOCKED
-# =============================================
-
-User-agent: Amazonbot
-Disallow: /
-
-User-agent: Applebot-Extended
-Disallow: /
-
-User-agent: Bytespider
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: ClaudeBot
-Disallow: /
-
-User-agent: Claude-Web
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
-
-User-agent: CloudflareBrowserRenderingCrawler
+# Block AI bots
+User-agent: GPTBot
 Disallow: /
 
 User-agent: Google-Extended
 Disallow: /
 
-User-agent: GPTBot
+User-agent: ClaudeBot
 Disallow: /
 
-User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: meta-externalagent
-Disallow: /
-
-User-agent: Meta-ExternalAgent
-Disallow: /
-
-User-agent: PerplexityBot
-Disallow: /
-
-User-agent: OAI-SearchBot
-Disallow: /
-
-# =============================================
-# Sitemap Location
-# =============================================
+# Sitemap
 Sitemap: https://pickcolors.xyz/sitemap.xml
