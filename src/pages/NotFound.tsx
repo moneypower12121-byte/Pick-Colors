@@ -2,9 +2,16 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 
+import SEO from '../components/SEO';
+
 export default function NotFound() {
   return (
     <div className="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
+      <SEO 
+        title="404 — Page Not Found | PickColors"
+        description="The page you are looking for does not exist."
+        noindex={true}
+      />
       <div className="absolute inset-0 mesh-gradient-bg opacity-30 blur-3xl -z-10"></div>
       
       <motion.div 

@@ -5,9 +5,10 @@ interface SEOProps {
   description: string;
   canonicalUrl?: string;
   jsonLd?: object;
+  noindex?: boolean;
 }
 
-export default function SEO({ title, description, canonicalUrl, jsonLd }: SEOProps) {
+export default function SEO({ title, description, canonicalUrl, jsonLd, noindex }: SEOProps) {
   const url = canonicalUrl || "https://pickcolors.xyz/";
 
   return (
@@ -15,7 +16,7 @@ export default function SEO({ title, description, canonicalUrl, jsonLd }: SEOPro
       {/* Primary Meta Tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
